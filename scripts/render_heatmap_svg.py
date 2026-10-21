@@ -1,13 +1,14 @@
 """Render data/contributions.json as the classic 53-week x 7-day heatmap.
 
-Rounded, colored boxes on a GitHub-ish green ramp:
+Rounded, colored boxes on a GitHub-ish green ramp. The palette is paired --
+a light-theme ramp and a dark-theme ramp selected by prefers-color-scheme,
+which SVG <img> documents inherit from the embedding page. The previous
+single dark palette (#161b22 for "no contributions") drew an invisible gray
+box on GitHub's white canvas.
 
-    PALETTE = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353", "#69f0a0"]
-    # none -> brightest (level 5 is a neon top end)
-
-Reveal: a diagonal, line-after-line slide-in (SMIL animate + animateTransform,
-fill=freeze) -- plays once on load, no looping glow. Plus a Less->More legend
-and a stats footer.
+Reveal: a diagonal, line-after-line slide-in (CSS opacity + transform, no
+SMIL geometry animating inside clipPath -- that never unfreezes behind
+GitHub's camo <img>). Plus a Less->More legend and a stats footer.
 
 Run: python scripts/render_heatmap_svg.py    # writes contrib-heatmap.svg
 """

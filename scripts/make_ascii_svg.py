@@ -8,14 +8,40 @@ areas, dense ones for dark:
     # ^ leading space clears the background to nothing
 
 Two design choices keep it clean instead of noisy:
-  * Monochrome -- one light-gray fill. Per-character rainbow coloring is what
+  * Monochrome -- one ink fill. Per-character rainbow coloring is what
     makes most ASCII portraits look like static.
   * High contrast -- a busy background washes out to the space glyph, so only
     the subject prints.
 
-Animation: each row is wrapped in a horizontal clip that wipes left-to-right
-(a small block "cursor" rides the wipe edge), staggered top to bottom. The
-portrait prints once and freezes -- SMIL, so GitHub plays it.
+Animation: rows fade and rise in on a stagger top-to-bottom, so the portrait
+types itself into existence. The reveal is CSS keyframes animating only opacity
+and transform on each row group.
+
+Why opacity/transform and not the two clip approaches tried before it:
+  1. SMIL <animate> on the width of a <rect> inside a <clipPath> (the heatmap
+     technique) froze in the start state -- every row stayed clipped to
+     width 0 and the portrait rendered as a blank box with only the cursor
+     blocks visible. Verified on the live profile: 1.22% ink, cursors present,
+     glyph text absent.
+  2. CSS keyframes animating clip-path:inset() on the group was also honoured
+     only partially -- it froze mid-clip and left a faint partial trace.
+     clip-path is not a compositor property in this context, so it is the one
+     animatable property that does not unpause.
+
+opacity + transform are the properties the info card and heatmap already
+animate successfully in the same camo <img> context, and they degrade safely:
+if a renderer drops the animation entirely, the end state is opacity 1 and
+translateY(0), so the art can only ever render complete -- never blank.
+
+The fill is set per <text> element, not only on the root: a root-level fill
+attribute is ignored for text when the SVG renders as a standalone image
+(glyphs came out black). A prefers-color-scheme media query re-inks the
+portrait for GitHub's dark theme, and prefers-reduced-motion skips the print.
+
+The fill is set per <text> element, not only on the root: a root-level fill
+attribute is ignored for text when the SVG renders as a standalone image
+(glyphs came out black). A prefers-color-scheme media query re-inks the
+portrait for GitHub's dark theme, and prefers-reduced-motion skips the print.
 
 Run: python scripts/make_ascii_svg.py      # writes bakkarranna-ascii.svg
 """
@@ -28,16 +54,22 @@ HERE = Path(__file__).resolve().parent
 REPO = HERE.parent
 
 COLS, ROWS = 100, 53
-RAMP = " .`:-=+*cs#%@"  # bright (sparse) -> dark (dense)
-FILL = "#9ba3af"  # single light-gray monochrome fill
+RAMP = " .`:-=+*cs#%" + "@"  # bright (sparse) -> dark (dense)
+INK = "#57606a"   # light-theme glyph ink (readable on white canvas)
+INK_DARK = "#c6cdd5"  # dark-theme glyph ink
 FONT_STACK = "'JetBrains Mono','Fira Mono','SFMono-Regular',Menlo,Consolas,monospace"
 
 # Character cell metrics for the monospace grid (viewBox units).
 CELL_W, CELL_H = 7.2, 13.6
 
-# Print timing.
-ROW_DURATION = 1.05   # seconds for one row to wipe across
-ROW_STAGGER = 0.34    # delay between rows
+# Print timing. Rows fade+rise rather than wipe: a left-to-right wipe needs
+# clip-path, and animating clip-path on an SVG group is the one thing that
+# never unfreezes behind GitHub's camo <img> (it froze mid-clip on the live
+# profile, leaving a faint partial trace -- measured at 1.22% ink). opacity +
+# transform are the properties the info card and heatmap already animate
+# successfully in that same context, so the reveal uses only those.
+ROW_DURATION = 0.42   # seconds for one row to fade/rise in
+ROW_STAGGER = 0.055   # delay between rows -> ~3.2s for the whole portrait
 WIDTH = COLS * CELL_W
 HEIGHT = ROWS * CELL_H
 
@@ -63,50 +95,28 @@ def build_svg(rows: list[str]) -> str:
     out = []
     out.append(
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH:.0f}" height="{HEIGHT:.0f}" '
-        f'viewBox="0 0 {WIDTH:.0f} {HEIGHT:.0f}" font-family="{FONT_STACK}" '
-        f'font-size="12" fill="{FILL}">'
+        f'viewBox="0 0 {WIDTH:.0f} {HEIGHT:.0f}" font-family="{FONT_STACK}" fill="{INK}">'
     )
     out.append(
-        "<style>text{white-space:pre;letter-spacing:0}</style>"
+        "<style>"
+        "text{fill:" + INK + ";white-space:pre;letter-spacing:0}"
+        ".row{animation:line " + f"{ROW_DURATION}s" + " ease both}"
+        "@keyframes line{from{opacity:0;transform:translateY(3px)}"
+        "to{opacity:1;transform:translateY(0)}}"
+        f"@media (prefers-color-scheme: dark){{text{{fill:{INK_DARK}}}}}"
+        "@media (prefers-reduced-motion: reduce)"
+        "{.row{animation:none;opacity:1;transform:none}}"
+        "</style>"
     )
-    # One clip per row, each animating its reveal width; a cursor block rides the edge.
-    out.append("<defs>")
-    for r in range(ROWS):
-        out.append(
-            f'<clipPath id="rowClip{r}"><rect id="clipRect{r}" x="0" y="0" width="0" '
-            f'height="{CELL_H:.1f}"><animate attributeName="width" from="0" to="{WIDTH:.0f}" '
-            f'dur="{ROW_DURATION}s" begin="{r * ROW_STAGGER:.2f}s" fill="freeze" '
-            f'calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0;1" '
-            f'values="0;{WIDTH:.0f}"/></rect></clipPath>'
-        )
-    out.append("</defs>")
 
     for r, text in enumerate(rows):
         delay = r * ROW_STAGGER
         baseline = r * CELL_H + CELL_H * 0.72  # text baseline inside the cell
         out.append(
-            f'<g clip-path="url(#rowClip{r})">'
-            f'<text x="0" y="{baseline:.1f}">{escape(text)}</text>'
+            f'<g class="row" style="animation-delay:{delay:.2f}s">'
+            f'<text x="0" y="{baseline:.1f}" fill="{INK}">{escape(text)}</text>'
             f"</g>"
         )
-        # Cursor block that rides the wipe edge, frozen at the end of the row.
-        out.append(
-            f'<rect x="0" y="{baseline - CELL_H * 0.82:.1f}" width="{CELL_W * 1.2:.1f}" '
-            f'height="{CELL_H * 0.85:.1f}" fill="{FILL}" opacity="0.9">'
-            f'<animate attributeName="x" from="0" to="{WIDTH - CELL_W * 1.2:.1f}" '
-            f'dur="{ROW_DURATION}s" begin="{delay:.2f}s" fill="freeze" '
-            f'calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0;1" values="0;{WIDTH - CELL_W * 1.2:.1f}"/>'
-            f'<animate attributeName="opacity" values="0.9;0.9" dur="{ROW_DURATION}s" '
-            f'begin="{delay:.2f}s" fill="freeze"/>'
-            f"</rect>"
-        )
-    # Hide the last cursor once its row finishes so the portrait freezes clean.
-    last = (ROWS - 1) * ROW_STAGGER + ROW_DURATION
-    out.append(
-        f'<rect x="0" y="0" width="0" height="0" fill="none">'
-        f'<animate attributeName="width" from="0" to="{WIDTH:.0f}" begin="{last:.2f}s" '
-        f'dur="0.001s" fill="freeze"/></rect>'
-    )
     out.append("</svg>")
     return "\n".join(out)
 
@@ -120,7 +130,10 @@ def main() -> None:
     svg = build_svg(rows)
     dst = REPO / "bakkarranna-ascii.svg"
     dst.write_text(svg, encoding="utf-8")
-    print(f"[ascii] wrote {dst} ({COLS}x{ROWS} grid, {ROWS * ROW_STAGGER + ROW_DURATION:.1f}s print)")
+    print(
+        f"[ascii] wrote {dst} ({COLS}x{ROWS} grid, "
+        f"{ROWS * ROW_STAGGER + ROW_DURATION:.1f}s reveal)"
+    )
 
 
 if __name__ == "__main__":
