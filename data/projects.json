@@ -1,0 +1,58 @@
+{
+  "featured": [
+    {
+      "name": "synaptix-outreach",
+      "kicker": "agentic outreach engine",
+      "blurb": "Self-hosted Django engine: scrape, enrich and send personalised waves, then track replies, bounces and qualified pipeline behind a compliance gate.",
+      "stack": ["Python", "Django", "Postgres", "Celery"],
+      "proof": "651 pytest cases",
+      "state": "local",
+      "href": "https://github.com/Bakkarranna/synaptix-outreach"
+    },
+    {
+      "name": "f1-race-strategy",
+      "kicker": "motorsport data",
+      "blurb": "How much tyre degradation and fuel actually cost in a race -- and whether a modelled pit plan beats what the team ran.",
+      "stack": ["Python", "pandas", "scipy"],
+      "proof": "holdout MAE by race",
+      "state": "public",
+      "href": "https://github.com/Bakkarranna/f1-race-strategy"
+    },
+    {
+      "name": "motorsport-onboard-vision",
+      "kicker": "computer vision",
+      "blurb": "Speed and yaw from a single onboard camera by reading road geometry -- vanishing point, track edges, optical flow -- and reporting how it degrades with noise.",
+      "stack": ["Python", "OpenCV", "numpy"],
+      "proof": "21 tests, degraded-mode report",
+      "state": "public",
+      "href": "https://github.com/Bakkarranna/motorsport-onboard-vision"
+    },
+    {
+      "name": "Synaptix Media OS",
+      "kicker": "media pipeline",
+      "blurb": "A project spec flows deterministically through compile, render, master, QC and final MP4 -- a new NVIDIA NIM provider added without touching the core.",
+      "stack": ["TypeScript", "Remotion", "FFmpeg"],
+      "proof": "126 vitest cases",
+      "state": "local",
+      "href": ""
+    },
+    {
+      "name": "Bricks",
+      "kicker": "agent-first spreadsheet",
+      "blurb": "A cell given an instruction spawns an autonomous research agent, plus a writer/prospect loop and an email-verification cascade.",
+      "stack": ["React", "Vite", "AI SDK"],
+      "proof": "29k LOC, live demo",
+      "state": "live",
+      "href": "https://use-bricks.netlify.app/"
+    },
+    {
+      "name": "synaptixstudio.com",
+      "kicker": "production site",
+      "blurb": "Agency marketing site with an AI-tools showcase, blog, admin dashboard and CRM on real data -- GSAP and Three.js motion throughout.",
+      "stack": ["React", "Vite", "Convex", "Tailwind"],
+      "proof": "HTTP 200",
+      "state": "live",
+      "href": "https://www.synaptixstudio.com"
+    }
+  ]
+}

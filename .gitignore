@@ -11,3 +11,17 @@ profile-preview*.png
 docs/
 source-photo.png
 scripts/source-prepped.png
+
+# scrap renders and reel screenshots (local inputs only, never art sources in CI)
+baseline-full.png
+portrait-zoomed.png
+prepped-white.png
+profile-preview*.png
+preview*.png
+inspiration/
+# portrait/layout scratch from local preview runs (never deployed):
+prepped-white.png
+baseline-full.png
+portrait-zoomed.png
+preview-portrait.html
+save
