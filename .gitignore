@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+pip-install.log
+*.log
+preview.html
+preview-inline.html
+preview-shot.png
+profile-agent.png
+profile-preview*.png
+docs/
+source-photo.png
+scripts/source-prepped.png
+preview-inline.html
+
