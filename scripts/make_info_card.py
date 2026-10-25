@@ -5,6 +5,15 @@ graph covers GitHub stats, this card is for the story numbers can't tell.
 Each line fades and slides in on a short stagger so the panel looks like it's
 printing next to the portrait.
 
+Layout, and why it is the way it is:
+    Left column (x 30..150)  rounded logo tile + <title> wordmark + swatches.
+    Right column (x 176..)   title, rule, then five key/value rows.
+Every row is *measured*, not guessed: the value column has a hard budget of
+VALUE_BUDGET characters at the monospace advance width, so a value can never
+run off the 520px canvas. An earlier version drew values at a fixed x with a
+13px monospace font and they silently spilled past the viewBox edge, which is
+what made the card look like it was overlapping its neighbours.
+
 The card is transparent and light-theme-first: GitHub's default canvas is
 white, and the previous palette was dark-theme text (#c9d1d9 on white) which
 rendered the body nearly invisible. A prefers-color-scheme media query
@@ -20,17 +29,23 @@ from xml.sax.saxutils import escape
 
 HERE = Path(__file__).resolve().parent
 REPO = HERE.parent
-W, H = 490, 316
+W, H = 560, 340
 FONT = "'JetBrains Mono','Fira Mono','SFMono-Regular',Menlo,Consolas,monospace"
+
+FS_VALUE = 13.0
+ADV = 0.60 * FS_VALUE          # monospace advance, ~7.8px per char
+VALUE_X = 176                  # left edge of the value column
+VALUE_END = W - 18             # right edge values may occupy
+VALUE_BUDGET = int((VALUE_END - 246) / ADV)   # 246 = VALUE_X + key width
 
 # Light-theme ink (GitHub light primitives), dark-theme overrides in DARK.
 FG = "#1f2328"       # values / body
 DIM = "#59636e"      # secondary text
-ACCENT = "#1a7f37"   # green headline accent
+ACCENT = "#1a7f37"   # green headline accent (logo pixels, .px)
 SWATCHES = ["#ebedf0", "#9be9a8", "#40c463", "#30a14e", "#216e39", "#1a7f37"]
 
 DARK = {
-    "fg": "#e6edf3", "dim": "#8b949e", "accent": "#3fb950",
+    "fg": "#e6edf3", "dim": "#8b949e", "px": "#3fb950",
     "rule": "#30363d",
     "swatches": ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353", "#69f0a0"],
     "rows": ["#3fb950", "#58a6ff", "#d29922", "#bc8cff", "#f778ba"],
@@ -39,67 +54,96 @@ LIGHT_ROWS = ["#1a7f37", "#0969da", "#9a6700", "#8250df", "#bf3989"]
 
 # The story the numbers can't tell. (key, value, light color, dark color)
 ROWS = [
-    ("Now", "building agentic systems at Synaptix Studio", LIGHT_ROWS[0], DARK["rows"][0]),
-    ("Prev", "F1 race-strategy analytics on OpenF1/FastF1", LIGHT_ROWS[1], DARK["rows"][1]),
+    ("Now", "agentic systems @ Synaptix Studio", LIGHT_ROWS[0], DARK["rows"][0]),
+    ("Prev", "F1 race-strategy analytics (OpenF1)", LIGHT_ROWS[1], DARK["rows"][1]),
     ("Stack", "Python / TypeScript / PHP / Kotlin", LIGHT_ROWS[2], DARK["rows"][2]),
-    ("Focus", "shipping LLM agents that survive production", LIGHT_ROWS[3], DARK["rows"][3]),
-    ("Also", "onboard vision for motorsport telemetry", LIGHT_ROWS[4], DARK["rows"][4]),
+    ("Focus", "shipping LLM agents that survive prod", LIGHT_ROWS[3], DARK["rows"][3]),
+    ("Also", "onboard vision for motorsport", LIGHT_ROWS[4], DARK["rows"][4]),
 ]
 
-# 8x8 pixel-art "S" (Synaptix) -- blocky logo, font-independent.
-LOGO = [
-    "........",
-    ".######.",
-    "##....##",
-    "##......",
-    ".#####..",
-    "......##",
-    "##....##",
-    ".######.",
-]
+# Synaptix mark: a rounded tile with a neural "S" -- two chevrons meeting at a
+# node, drawn as strokes so it stays crisp at any size and re-inks in dark.
+LOGO_TILE = 116
+LOGO_X, LOGO_Y = 30, 30
 
 
-def pixel_logo(x0: int, y0: int, cell: int, color: str) -> str:
-    parts = []
-    for r, line in enumerate(LOGO):
-        for c, ch in enumerate(line):
-            if ch == "#":
-                parts.append(
-                    f'<rect x="{x0 + c * cell}" y="{y0 + r * cell}" width="{cell}" height="{cell}" fill="{color}"/>'
-                )
-    return "".join(parts)
+def logo_tile() -> str:
+    """Soft rounded tile with a corner highlight, so the mark sits on a plate."""
+    return (
+        f'<rect x="{LOGO_X}" y="{LOGO_Y}" width="{LOGO_TILE}" '
+        f'height="{LOGO_TILE}" rx="26" ry="26" class="tile"/>'
+        f'<rect x="{LOGO_X + 8}" y="{LOGO_Y + 8}" width="{LOGO_TILE - 16}" '
+        f'height="{LOGO_TILE - 16}" rx="20" ry="20" class="tile-in"/>'
+    )
+
+
+def logo_glyph() -> str:
+    """The 'S' as two strokes plus a synapse dot, centred in the tile."""
+    cx, cy = LOGO_X + LOGO_TILE / 2, LOGO_Y + LOGO_TILE / 2 + 2
+    s = LOGO_TILE / 116.0          # unit scale so the mark follows the tile
+    pp = [
+        f'<path class="gl" d="M{cx - 20 * s:.1f},{cy - 18 * s:.1f} '
+        f'C{cx + 6 * s:.1f},{cy - 24 * s:.1f} {cx + 22 * s:.1f},{cy - 4 * s:.1f} '
+        f'{cx + 2 * s:.1f},{cy:.1f} '
+        f'C{cx + 12 * s:.1f},{cy + 4 * s:.1f} {cx - 6 * s:.1f},{cy + 2 * s:.1f} '
+        f'{cx - 18 * s:.1f},{cy + 6 * s:.1f} '
+        f'C{cx - 26 * s:.1f},{cy + 16 * s:.1f} {cx + 2 * s:.1f},{cy + 26 * s:.1f} '
+        f'{cx + 20 * s:.1f},{cy + 20 * s:.1f}"/>',
+        f'<circle class="node" cx="{cx + 20 * s:.1f}" cy="{cy + 20 * s:.1f}" '
+        f'r="{4.5 * s:.1f}"/>',
+        f'<circle class="node2" cx="{cx - 20 * s:.1f}" cy="{cy - 18 * s:.1f}" '
+        f'r="{3.2 * s:.1f}"/>',
+    ]
+    return "".join(pp)
 
 
 def theme_css(static: bool) -> str:
     css = [
         ".fg{fill:" + FG + "}",
         ".dim{fill:" + DIM + "}",
-        ".accent{fill:" + ACCENT + "}",
         ".rule{stroke:#d0d7de}",
+        ".tile{fill:#eef3ee}",
+        ".tile-in{fill:#ffffff}",
+        ".gl{stroke:" + ACCENT + ";stroke-width:7;stroke-linecap:round;fill:none}",
+        ".node{fill:" + ACCENT + "}",
+        ".node2{fill:" + DIM + "}",
     ]
     for i, c in enumerate(SWATCHES):
         css.append(f".sw{i}{{fill:{c}}}")
+    for i, c in enumerate(LIGHT_ROWS):
+        css.append(f".row{i}{{fill:{c}}}")
     if not static:
         css.insert(0, ".line,.title,.swatches,.logo{opacity:0}")
         css += [
             "@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}",
-            ".title{animation:rise .5s ease .15s forwards}",
-            ".swatches{animation:rise .5s ease .5s forwards}",
-            ".logo{animation:rise .6s ease .2s forwards}",
+            # No delay baked into the shorthand: every reveal position lives on the
+            # element as animation-delay, the way the heatmap ramps its cells, so
+            # the whole card's timing reads off one list in build().
+            ".title{animation:rise .5s ease forwards}",
+            ".swatches{animation:rise .5s ease forwards}",
+            ".logo{animation:rise .6s ease forwards}",
             ".line{animation:rise .5s ease forwards}",
         ]
-    # Dark-theme re-ink.
     dark = [".fg{fill:" + DARK["fg"] + "}", ".dim{fill:" + DARK["dim"] + "}",
-            ".accent{fill:" + DARK["accent"] + "}", ".rule{stroke:" + DARK["rule"] + "}"]
+            ".rule{stroke:" + DARK["rule"] + "}",
+            ".tile{fill:#12181f}", ".tile-in{fill:#0d1117}",
+            ".gl{stroke:" + DARK["px"] + "}",
+            ".node{fill:" + DARK["px"] + "}", ".node2{fill:" + DARK["dim"] + "}"]
     for i, c in enumerate(DARK["swatches"]):
         dark.append(f".sw{i}{{fill:{c}}}")
+    for i, c in enumerate(DARK["rows"]):
+        dark.append(f".row{i}{{fill:{c}}}")
     css.append("@media (prefers-color-scheme: dark){" + "".join(dark) + "}")
     css.append("@media (prefers-reduced-motion: reduce)"
-               "{.line,.title,.swatches,.logo{animation:none;opacity:1}}")
+               "{.line,.title,.swatches,.logo{animation:none;opacity:1;transform:none}}")
     return "".join(css)
 
 
 def build(static: bool) -> str:
+    def delay(seconds: float) -> str:
+        """Inline reveal position, or nothing for the frozen static frame."""
+        return "" if static else f' style="animation-delay:{seconds:.2f}s"'
+
     svg = []
     svg.append(
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" '
@@ -109,45 +153,54 @@ def build(static: bool) -> str:
     if static:
         svg.append("<style>.line,.title,.swatches,.logo{opacity:1}</style>")
 
-    # ---- left column: logo + swatches -------------------------------------
-    svg.append(f'<g class="logo">{pixel_logo(30, 26, 13, ACCENT)}</g>')
-    svg.append(f'<text x="30" y="158" font-size="13" class="dim">synaptix-studio</text>')
+    # ---- left column: logo + wordmark + swatches ---------------------------
+    svg.append(
+        f'<g class="logo"{delay(0.20)}>{logo_tile()}{logo_glyph()}</g>'
+    )
+    svg.append(
+        f'<text class="title dim"{delay(0.15)} x="{LOGO_X + LOGO_TILE / 2}" '
+        f'y="{LOGO_Y + LOGO_TILE + 26}" font-size="13" text-anchor="middle">'
+        f"synaptix-studio</text>"
+    )
     sw = "".join(
-        f'<rect x="{30 + i * 26}" y="176" width="22" height="10" rx="2" class="sw{i}"/>'
+        f'<rect x="{LOGO_X + (i % 3) * 40}" y="{LOGO_Y + LOGO_TILE + 40 + (i // 3) * 20}" '
+        f'width="34" height="15" rx="2" class="sw{i}"/>'
         for i in range(len(SWATCHES))
     )
-    svg.append(f'<g class="swatches">{sw}</g>')
+    svg.append(f'<g class="swatches"{delay(0.50)}>{sw}</g>')
 
     # ---- right column: title + key/value rows ------------------------------
-    tx, ty = 168, 44
     svg.append(
-        f'<text class="title fg" x="{tx}" y="{ty}" font-size="19" font-weight="bold">'
-        f"bakkarranna@github</text>"
+        f'<text class="title fg"{delay(0.15)} x="{VALUE_X}" y="46" '
+        f'font-size="19" font-weight="bold">bakkarranna@github</text>'
     )
     svg.append(
-        f'<line class="rule" x1="{tx}" y1="{ty + 12}" x2="{W - 16}" y2="{ty + 12}" stroke-width="1"/>'
+        f'<line class="rule" x1="{VALUE_X}" y1="58" x2="{W - 18}" '
+        f'y2="58" stroke-width="1"/>'
     )
 
-    for i, (key, value, light, dark) in enumerate(ROWS):
-        y = ty + 46 + i * 42
-        delay = 0.6 + i * 0.28
-        style = "" if static else f' style="animation-delay:{delay:.2f}s"'
+    for i, (key, value, _light, _dark) in enumerate(ROWS):
+        y = 90 + i * 40
+        style = delay(0.60 + i * 0.28)
+        assert len(value) <= VALUE_BUDGET, (value, len(value), VALUE_BUDGET)
         svg.append(
             f'<g class="line"{style}>'
-            f'<circle cx="{tx + 4}" cy="{y - 4}" r="4" fill="{light}"/>'
-            f'<text x="{tx + 18}" y="{y}" font-size="13" fill="{light}">{escape(key)}</text>'
-            f'<text x="{tx + 96}" y="{y}" font-size="13" class="fg">{escape(value)}</text>'
+            f'<circle cx="{VALUE_X + 4}" cy="{y - 4}" r="4" class="row{i}"/>'
+            f'<text x="{VALUE_X + 18}" y="{y}" font-size="13" class="row{i}">'
+            f"{escape(key)}</text>"
+            f'<text x="246" y="{y}" font-size="13" class="fg">{escape(value)}</text>'
             f"</g>"
         )
 
-    # contact line at the bottom
-    contact_y = ty + 46 + len(ROWS) * 42
-    cd = 0.6 + len(ROWS) * 0.28
-    cstyle = "" if static else f' style="animation-delay:{cd:.2f}s"'
+    # contact line, full width underneath so it cannot collide with a value
+    contact_y = 90 + len(ROWS) * 40 - 6
+    style = delay(0.60 + len(ROWS) * 0.28)
     svg.append(
-        f'<g class="line"{cstyle}>'
-        f'<text x="{tx}" y="{contact_y}" font-size="12" class="dim">'
-        f"synaptixstudio.com · linkedin.com/in/muhammadabubakar-siddique</text>"
+        f'<g class="line"{style}>'
+        f'<line class="rule" x1="{VALUE_X}" y1="{contact_y - 20}" '
+        f'x2="{W - 18}" y2="{contact_y - 20}" stroke-width="1"/>'
+        f'<text x="{VALUE_X}" y="{contact_y}" font-size="12" class="dim">'
+        f"synaptixstudio.com &#183; linkedin.com/in/muhammadabubakar-siddique</text>"
         f"</g>"
     )
 

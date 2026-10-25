@@ -22,7 +22,7 @@ W = 900
 PAD = 22
 COLS = 3
 GAP = 14
-CARD_H = 176
+CARD_H = 196
 
 INK = "#0d1117"
 SUB = "#57606a"
@@ -32,6 +32,9 @@ FACE_ALT = "#f6f8fa"
 
 # Colour identity per card, reused in both themes so the row reads as a set.
 ACCENTS = ["#8250df", "#0969da", "#1a7f37", "#bf3989", "#9a6700", "#cf222e"]
+# The same six slots at the brightness GitHub's dark accents use, so an accent
+# hairline and a bright badge still read against #0d1117.
+ACCENTS_DARK = ["#ab7df8", "#58a6ff", "#3fb950", "#ff7bce", "#d29922", "#f85149"]
 
 STATE_BADGE = {
     "public": "open source",
@@ -46,6 +49,15 @@ NODE_BUDGET = 1400
 
 def esc(text: str) -> str:
     return html.escape(text, quote=True)
+
+
+def accent_rules(colors: list[str]) -> str:
+    """One fill rule per accent slot (.a0..a5), keyed by the card index.
+
+    The accent is art, not chrome: painting it on the element pins one colour
+    under both themes, so it moves into a class that has a dark twin.
+    """
+    return "".join(f".a{i}{{fill:{c}}}" for i, c in enumerate(colors))
 
 
 def chips(items: list[str], limit: int = 3) -> list[str]:
@@ -86,6 +98,8 @@ def theme_css() -> str:
     .st{fill:%(SUB)s;font:600 8px ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;letter-spacing:.7px}
     .badge{fill:%(FACE)s;font:700 7.5px ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;letter-spacing:.6px}
     .ln{stroke:%(RULE)s;stroke-width:1;fill:none}
+    .chip{fill:none;stroke:%(RULE)s}
+    %(ACCENTS)s
     @media (prefers-color-scheme: dark){
       .card{fill:#0d1117;stroke:#30363d}
       .card.alt{fill:#161b22}
@@ -93,8 +107,18 @@ def theme_css() -> str:
       .k,.s,.p,.st{fill:#8b949e}
       .badge{fill:#0d1117}
       .ln{stroke:#30363d}
+      .chip{stroke:#30363d}
+      %(ACCENTS_DARK)s
     }
-    </style>""" % {"FACE": FACE, "FACE_ALT": FACE_ALT, "RULE": RULE, "INK": INK, "SUB": SUB}
+    </style>""" % {
+        "FACE": FACE,
+        "FACE_ALT": FACE_ALT,
+        "RULE": RULE,
+        "INK": INK,
+        "SUB": SUB,
+        "ACCENTS": accent_rules(ACCENTS),
+        "ACCENTS_DARK": accent_rules(ACCENTS_DARK),
+    }
 
 
 def bar(total: int, peak: int, width: int) -> list[tuple[float, float]]:
@@ -137,8 +161,10 @@ def build() -> str:
             f'width="{cw:.2f}" height="{CARD_H}" rx="12" ry="12"/>'
         )
         # accent hairline
+        slot = f"a{idx % len(ACCENTS)}"
         parts.append(
-            f'<rect x="0" y="0" width="{cw:.2f}" height="3" rx="1.5" fill="{accent}"/>'
+            f'<rect class="{slot}" x="0" y="0" width="{cw:.2f}" height="3" '
+            f'rx="1.5"/>'
         )
         pad = 15
         iw = cw - 2 * pad
@@ -149,8 +175,8 @@ def build() -> str:
         )
         bw = 7.2 * len(badge) + 14
         parts.append(
-            f'<rect x="{cw - pad - bw:.2f}" y="{pad + 4}" width="{bw:.2f}" height="15" '
-            f'rx="7.5" fill="{accent}"/>'
+            f'<rect class="{slot}" x="{cw - pad - bw:.2f}" y="{pad + 4}" '
+            f'width="{bw:.2f}" height="15" rx="7.5"/>'
         )
         parts.append(
             f'<text class="badge" x="{cw - pad - bw / 2:.2f}" y="{pad + 14.5}" '
@@ -180,8 +206,8 @@ def build() -> str:
             label = esc(chip)
             cwid = 6.2 * len(label) + 12
             parts.append(
-                f'<rect x="{cx:.2f}" y="{cy - 9}" width="{cwid:.2f}" height="16" rx="8" '
-                f'fill="none" stroke="{RULE}"/>'
+                f'<rect class="chip" x="{cx:.2f}" y="{cy - 9}" width="{cwid:.2f}" '
+                f'height="16" rx="8"/>'
             )
             parts.append(
                 f'<text class="s" x="{cx + cwid / 2:.2f}" y="{cy + 2}" '

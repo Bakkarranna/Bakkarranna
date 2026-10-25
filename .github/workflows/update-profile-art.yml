@@ -26,11 +26,9 @@ jobs:
       - run: python scripts/make_skills_svg.py
       - run: python scripts/make_stats_strip_svg.py
       - run: python scripts/make_city_svg.py
-      - run: python scripts/make_constellation_svg.py
       - run: python scripts/make_projects_svg.py
-      - run: python scripts/make_sky_svg.py
       - run: python scripts/verify_svg.py
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: refresh profile art [skip ci]"
-          file_pattern: "data/contributions.json contrib-heatmap.svg stats-strip.svg info-card.svg bakkarrarna-ascii.svg skills.svg contribution-city.svg constellation.svg projects.svg night-sky.svg"
+          file_pattern: "data/contributions.json contrib-heatmap.svg stats-strip.svg info-card.svg bakkarrarna-ascii.svg skills.svg contribution-city.svg projects.svg"

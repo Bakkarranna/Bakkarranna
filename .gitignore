@@ -24,4 +24,6 @@ prepped-white.png
 baseline-full.png
 portrait-zoomed.png
 preview-portrait.html
+# theme-QA renders: regenerated locally by scripts/theme_qa.py (needs Chrome)
+theme-qa/
 save

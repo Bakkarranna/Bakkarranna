@@ -95,6 +95,7 @@ def theme_css(static: bool) -> str:
         ".fg{fill:" + FG + "}",
         ".dim{fill:" + DIM + "}",
         ".plate{fill:" + CHIP_BG + ";stroke:" + CHIP_RULE + "}",
+        ".rule{stroke:" + CHIP_RULE + "}",
         ".m{fill:" + METER_EMPTY + "}",
     ]
     for i, c in enumerate(GROUP_INK):
@@ -110,6 +111,7 @@ def theme_css(static: bool) -> str:
         ".fg{fill:" + DARK["fg"] + "}",
         ".dim{fill:" + DARK["dim"] + "}",
         ".plate{fill:" + DARK["chip_bg"] + ";stroke:" + DARK["chip_rule"] + "}",
+        ".rule{stroke:" + DARK["chip_rule"] + "}",
         ".m{fill:" + DARK["meter_empty"] + "}",
     ]
     for i, c in enumerate(DARK_GROUP_INK):
@@ -140,8 +142,8 @@ def build(static: bool) -> str:
         f"--format=meters  (5 = daily driver, 1 = dabbling)</text>"
     )
     out.append(
-        f'<line x1="{MARGIN}" y1="36" x2="{W - MARGIN}" y2="36" '
-        f'stroke="{CHIP_RULE}" stroke-width="1"/>'
+        f'<line class="rule" x1="{MARGIN}" y1="36" x2="{W - MARGIN}" y2="36" '
+        f'stroke-width="1"/>'
     )
 
     y = TITLE_BLOCK

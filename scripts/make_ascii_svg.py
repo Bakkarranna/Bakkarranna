@@ -94,8 +94,11 @@ def to_ascii_rows(gray) -> list[str]:
 def build_svg(rows: list[str]) -> str:
     out = []
     out.append(
+        # No fill attribute on the root: `text{fill:...}` below paints every
+        # glyph for both themes, so a root fill would be a light-theme default
+        # that no rule re-inks -- fixed ink that only ever shows one colour.
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH:.0f}" height="{HEIGHT:.0f}" '
-        f'viewBox="0 0 {WIDTH:.0f} {HEIGHT:.0f}" font-family="{FONT_STACK}" fill="{INK}">'
+        f'viewBox="0 0 {WIDTH:.0f} {HEIGHT:.0f}" font-family="{FONT_STACK}">'
     )
     out.append(
         "<style>"

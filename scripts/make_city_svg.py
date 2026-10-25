@@ -357,8 +357,14 @@ def city(out: list[str], days: list[dict], static: bool) -> None:
         x, y = iso(last.get("week", 0), last.get("weekday", 0))
         h = height_of(last.get("count", 0), peak)
         cy = y - TH - h - 9
+        # The pin belongs to the newest day, so it lands on that day's reveal
+        # position: the same ramp formula the loop above uses, one step on.
+        pin_delay = "" if static else (
+            " style=\"animation-delay:"
+            f"{0.05 + (last.get('week', 0) + last.get('weekday', 0) + 1) * 0.012:.3f}s\""
+        )
         out.append(
-            f'<g class="now"><path d="M{x},{cy - 4} {x + 2.6},{cy} '
+            f'<g class="now"{pin_delay}><path d="M{x},{cy - 4} {x + 2.6},{cy} '
             f'{x},{cy + 4} {x - 2.6},{cy}Z"/></g>'
         )
 
