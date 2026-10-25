@@ -6,13 +6,18 @@ which SVG <img> documents inherit from the embedding page. The previous
 single dark palette (#161b22 for "no contributions") drew an invisible gray
 box on GitHub's white canvas.
 
-Reveal: a diagonal, line-after-line slide-in (CSS opacity + transform, no
-SMIL geometry animating inside clipPath -- that never unfreezes behind
-GitHub's camo <img>). Plus a Less->More legend and a stats footer.
+Reveal: a diagonal, cell-after-cell slide-in. Animation is opacity +
+transform only and is driven by CSS animation-delay rather than SMIL
+<animate> -- every other panel moved to that form after SMIL begin offsets
+proved unreliable behind GitHub's camo <img>, and a frozen panel still shows
+the full grid because every animation ends fully visible. Plus a Less->More
+legend and a stats footer.
 
-Run: python scripts/render_heatmap_svg.py    # writes contrib-heatmap.svg
+Run: python scripts/render_heatmap_svg.py     # animated
+     STATIC=1 python scripts/render_heatmap_svg.py  # frozen frame
 """
 import json
+import os
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
@@ -20,7 +25,12 @@ REPO = HERE.parent
 DATA = REPO / "data" / "contributions.json"
 OUT = REPO / "contrib-heatmap.svg"
 
-PALETTE = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353", "#69f0a0"]
+# Light theme first (GitHub light primitives); the dark re-ink keeps the
+# "no contributions" cell a gray that still reads on GitHub's dark canvas.
+PALETTE = ["#ebedf0", "#9be9a8", "#40c463", "#30a14e", "#216e39", "#1a7f37"]
+DARK_PALETTE = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353", "#69f0a0"]
+FG, DIM = "#1f2328", "#57606e"
+DARK_FG, DARK_DIM = "#e6edf3", "#8b949e"
 # fixed thresholds -> 0..5 (level 5 is the neon top end)
 THRESHOLDS = [0, 1, 4, 8, 12, 20]
 
@@ -29,7 +39,6 @@ MARGIN_L, TOP = 30, 20  # room for weekday labels (left) and month labels (top)
 MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
           "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
-FG, DIM = "#c9d1d9", "#8b949e"
 
 
 def level_for(count: int) -> int:
@@ -40,7 +49,36 @@ def level_for(count: int) -> int:
     return lvl
 
 
-def build(payload: dict) -> str:
+def theme_css(static: bool) -> str:
+    """Light theme first; prefers-color-scheme re-inks cells and text.
+
+    SVG <img> documents inherit the embedding page's color scheme, so GitHub's
+    dark theme swaps the palette without a second markup variant. Cells are
+    hidden only while the reveal runs, and prefers-reduced-motion collapses
+    straight to the finished grid -- a frozen panel still shows every day.
+    """
+    css = [f".c{i}{{fill:{c}}}" for i, c in enumerate(PALETTE)]
+    css.append(f".fg{{fill:{FG}}}")
+    css.append(f".dim{{fill:{DIM}}}")
+    if not static:
+        css += [
+            ".cell{opacity:0}",
+            "@keyframes cell{from{opacity:0;transform:translate(-4px,-4px)}"
+            "to{opacity:1;transform:none}}",
+            ".cell{animation:cell .35s ease-out forwards}",
+        ]
+    dark = [f".c{i}{{fill:{c}}}" for i, c in enumerate(DARK_PALETTE)]
+    dark.append(f".fg{{fill:{DARK_FG}}}")
+    dark.append(f".dim{{fill:{DARK_DIM}}}")
+    css.append("@media (prefers-color-scheme: dark){" + "".join(dark) + "}")
+    css.append(
+        "@media (prefers-reduced-motion: reduce)"
+        "{.cell{animation:none;opacity:1;transform:none}}"
+    )
+    return "".join(css)
+
+
+def build(payload: dict, static: bool = False) -> str:
     days = payload["days"]
     n_weeks = max(d["week"] for d in days) + 1
     width = MARGIN_L + n_weeks * PITCH + 8
@@ -70,17 +108,17 @@ def build(payload: dict) -> str:
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" '
         f'viewBox="0 0 {width} {height}" font-family="monospace">'
     ]
-    out.append(f'<rect width="{width}" height="{height}" fill="none"/>')
+    out.append(f'<style>{theme_css(static)}</style>')
 
     # month labels
     for week, name in month_marks:
         out.append(
-            f'<text x="{MARGIN_L + week * PITCH}" y="{TOP - 6}" font-size="10" fill="{DIM}">{name}</text>'
+            f'<text class="dim" font-size="10" x="{MARGIN_L + week * PITCH}" y="{TOP - 6}">{name}</text>'
         )
     # weekday labels (Mon / Wed / Fri)
     for day, name in [(1, "Mon"), (3, "Wed"), (5, "Fri")]:
         out.append(
-            f'<text x="0" y="{TOP + day * PITCH + 9}" font-size="10" fill="{DIM}">{name}</text>'
+            f'<text class="dim" font-size="10" x="0" y="{TOP + day * PITCH + 9}">{name}</text>'
         )
 
     # cells -- diagonal slide-in reveal, once, frozen
@@ -92,15 +130,12 @@ def build(payload: dict) -> str:
             x = MARGIN_L + week * PITCH
             y = TOP + weekday * PITCH
             delay = (week + weekday) * 0.035
-            color = PALETTE[lvl]
+            style = "" if static else f' style="animation-delay:{delay:.2f}s"'
             title = next(d for d in days if d["week"] == week and d["weekday"] == weekday)
             out.append(
-                f'<rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="2" ry="2" fill="{color}">'
+                f'<rect class="cell c{lvl}"{style} x="{x}" y="{y}" width="{CELL}"'
+                f' height="{CELL}" rx="2" ry="2">'
                 f"<title>{title['count']} contributions on {title['date']}</title>"
-                f'<animate attributeName="opacity" from="0" to="1" dur="0.35s" begin="{delay:.3f}s" fill="freeze"/>'
-                f'<animateTransform attributeName="transform" type="translate" '
-                f'from="-4 -4" to="0 0" dur="0.35s" begin="{delay:.3f}s" fill="freeze" '
-                f'calcMode="spline" keySplines="0.25 1 0.5 1" keyTimes="0;1" values="-4 -4;0 0"/>'
                 f"</rect>"
             )
 
@@ -108,24 +143,24 @@ def build(payload: dict) -> str:
     used = sorted(set(grid.values()))
     steps = used if 1 < len(used) < len(PALETTE) else list(range(len(PALETTE)))
     lx = MARGIN_L + n_weeks * PITCH - (len(steps) + 1) * PITCH
-    out.append(f'<text x="{lx - 34}" y="{legend_y + 9}" font-size="10" fill="{DIM}">Less</text>')
+    out.append('<text class="dim" font-size="10" x="620" y="136">Less</text>')
     for i, idx in enumerate(steps):
         out.append(
-            f'<rect x="{lx + i * PITCH}" y="{legend_y}" width="{CELL}" height="{CELL}" rx="2" ry="2" '
-            f'fill="{PALETTE[idx]}"/>'
+            f'<rect class="c{idx}" x="{lx + i * PITCH}" y="{legend_y}" width="{CELL}"'
+            f' height="{CELL}" rx="2" ry="2"/>'
         )
     out.append(
-        f'<text x="{lx + len(steps) * PITCH + 6}" y="{legend_y + 9}" font-size="10" fill="{DIM}">More</text>'
+        f'<text class="dim" font-size="10" x="{lx + len(steps) * PITCH + 6}" y="{legend_y + 9}">More</text>'
     )
 
     # footer stats
     s = payload["stats"]
     out.append(
-        f'<text x="{MARGIN_L}" y="{height - 8}" font-size="12" fill="{FG}">'
+        f'<text class="fg" font-size="12" x="{MARGIN_L}" y="{height - 8}">'
         f"{s['total_last_year']:,} contributions in the last year</text>"
     )
     out.append(
-        f'<text x="{width - 8}" y="{height - 8}" font-size="11" fill="{DIM}" text-anchor="end">'
+        f'<text class="dim" font-size="11" x="{width - 8}" y="{height - 8}" text-anchor="end">'
         f"streak {s['current_streak']}d · best {s['best_day']['count']} · "
         f"longest {s['longest_streak']}d</text>"
     )
@@ -134,11 +169,13 @@ def build(payload: dict) -> str:
 
 
 def main() -> None:
+    static = os.environ.get("STATIC") == "1"
     payload = json.loads(DATA.read_text(encoding="utf-8"))
-    svg = build(payload)
+    svg = build(payload, static)
     OUT.write_text(svg, encoding="utf-8")
     print(f"[heatmap] wrote {OUT} ({len(payload['days'])} days, "
-          f"{max(d['week'] for d in payload['days']) + 1} weeks)")
+          f"{max(d['week'] for d in payload['days']) + 1} weeks, "
+          f"{'static' if static else 'animated'})")
 
 
 if __name__ == "__main__":

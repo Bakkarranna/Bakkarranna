@@ -48,16 +48,28 @@ def intrinsic_size(svg_name: str) -> tuple[int, int]:
     return w, hh
 
 
-def shoot(svg_name: str, dark: bool) -> Path:
+def shoot(svg_name: str, dark: bool, out: Path | None = None) -> Path:
+    """Screenshot one panel on a light/dark wrapper.
+
+    `out` lets a caller keep several shots at once (theme_qa.py renders every
+    panel on both backdrops); the default keeps the historical repo-root names.
+    """
     browser = find_browser()
     if not browser:
         raise SystemExit("no Chrome/Edge binary found")
     bg = "#0d1117" if dark else "#ffffff"
-    out = REPO / ("preview-dark.png" if dark else "preview-shot.png")
+    # color-scheme is what makes the shot meaningful: an <img>-embedded SVG
+    # inherits it, so the panel's own @media (prefers-color-scheme: dark)
+    # block fires. Without it a "dark" shot is just the light palette pasted
+    # on a dark rectangle -- which silently hides a missing dark override.
+    scheme = "dark" if dark else "light"
+    out = out or REPO / ("preview-dark.png" if dark else "preview-shot.png")
+    out.parent.mkdir(parents=True, exist_ok=True)
     html = REPO / "preview.html"
     html.write_text(
-        f'<!doctype html><meta charset="utf-8"><body style="margin:0;'
-        f'background:{bg}"><img src="{svg_name}" style="display:block"></body>',
+        f'<!doctype html><meta charset="utf-8"><html style="color-scheme:{scheme}">'
+        f'<body style="margin:0;background:{bg}">'
+        f'<img src="{svg_name}" style="display:block"></body></html>',
         encoding="utf-8",
     )
     url = html.resolve().as_uri()
@@ -69,7 +81,14 @@ def shoot(svg_name: str, dark: bool) -> Path:
         [browser, "--headless=new", "--disable-gpu", "--no-sandbox",
          f"--screenshot={out}", f"--window-size={iw * scale},{ih * scale}",
          "--hide-scrollbars", "--force-device-scale-factor=1",
-         "--virtual-time-budget=6000", url],
+         "--virtual-time-budget=6000",
+         # Capture the finished frame. A --screenshot run cannot advance CSS
+         # animations, so without this every reveal panel comes back at its
+         # start state (measured 0.00% ink, a pure-white/near-black rectangle)
+         # and a theme look is meaningless. Every panel already implements
+         # prefers-reduced-motion to drop straight to its end state, so this
+         # is the project's own "finished art" switch, not a workaround.
+         "--force-prefers-reduced-motion", url],
         check=True, capture_output=True, timeout=120,
     )
     return out

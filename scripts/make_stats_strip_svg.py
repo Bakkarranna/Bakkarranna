@@ -95,7 +95,7 @@ def theme_css(static: bool) -> str:
             ".kpi,.bar,.chart-label{opacity:0}",
             "@keyframes rise{from{opacity:0;transform:translateY(10px)}"
             "to{opacity:1;transform:translateY(0)}}",
-            ".chart-label{animation:rise .4s ease .1s forwards}",
+            ".chart-label{animation:rise .4s ease forwards}",
             ".kpi{animation:rise .45s ease forwards}",
             ".bar{animation:rise .5s ease forwards}",
         ]
@@ -116,6 +116,15 @@ def theme_css(static: bool) -> str:
 
 
 def build(static: bool) -> str:
+    def _delay(seconds: float) -> str:
+        """Inline reveal position, or nothing for the frozen static frame.
+
+        Same convention as the heatmap and the info card: the timing lives on
+        the element, never baked into the animation shorthand, so one place in
+        this generator reads the panel's whole reveal order.
+        """
+        return "" if static else f' style="animation-delay:{seconds:.2f}s"'
+
     stats = load()
     monthly = stats.get("monthly", [])
     peak = max((m.get("total", 0) for m in monthly), default=0) or 1
@@ -146,8 +155,7 @@ def build(static: bool) -> str:
     cell_w = (W - MARGIN * 2) / len(kpis(stats))
     for i, (label, value, sub) in enumerate(kpis(stats)):
         x = MARGIN + i * cell_w
-        delay = 0.1 + i * 0.07
-        style = "" if static else f' style="animation-delay:{delay:.2f}s"'
+        style = _delay(0.10 + i * 0.07)
         out.append(f'<g class="kpi"{style}>')
         out.append(f'<text x="{x}" y="52" font-size="10" class="dim">{escape(label)}</text>')
         out.append(
@@ -166,7 +174,7 @@ def build(static: bool) -> str:
     top = 116
     baseline = H - 22
     out.append(
-        f'<g class="chart-label">'
+        f'<g class="chart-label"{_delay(0.10)}>'
         f'<text x="{MARGIN}" y="{top}" font-size="11" class="dim">'
         f"contributions per month</text></g>"
     )
@@ -178,8 +186,7 @@ def build(static: bool) -> str:
         x = cx + (cell - BAR_W) / 2
         h = max(2, round(total / peak * BAR_H_MAX)) if total else 3
         y = baseline - h
-        delay = 0.25 + i * 0.04
-        style = "" if static else f' style="animation-delay:{delay:.2f}s"'
+        style = _delay(0.25 + i * 0.04)
         out.append(f'<g class="bar"{style}>')
         out.append(
             f'<rect x="{x:.1f}" y="{baseline - 3:.1f}" width="{BAR_W}" height="3" rx="1" '
