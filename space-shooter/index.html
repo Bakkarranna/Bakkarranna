@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>space-shooter &mdash; a contribution game</title>
+<meta name="description" content="A space shooter built from one year of GitHub contribution data: every block is a real contribution day.">
+<link rel="icon" href="./favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="page">
+  <header class="head">
+    <h1><code>bakkarranna@github ~ $ ./space_shooter.sh</code></h1>
+    <p class="sub">
+      One year of the contribution graph, turned into a sky you can clear.
+      Every block is a real contribution day &mdash; its colour is that day&rsquo;s
+      heatmap level, its health is that day&rsquo;s commit count, and the thirteen
+      waves follow the calendar in order.
+    </p>
+  </header>
+
+  <main class="stage">
+    <div class="hud" id="hud">
+      <div class="hud-cell">
+        <span class="hud-label">score</span>
+        <span class="hud-value" id="score">0</span>
+      </div>
+      <div class="hud-cell">
+        <span class="hud-label">wave</span>
+        <span class="hud-value" id="wave">1 / 13</span>
+      </div>
+      <div class="hud-cell">
+        <span class="hud-label">streaks</span>
+        <span class="hud-value" id="streaks">&#9632;&#9632;&#9632;</span>
+      </div>
+      <div class="hud-cell">
+        <span class="hud-label">best</span>
+        <span class="hud-value" id="best">0</span>
+      </div>
+    </div>
+
+    <div class="screen">
+      <canvas id="game" width="480" height="640" tabindex="0"
+              role="application" aria-labelledby="game-help"
+              aria-describedby="say"></canvas>
+      <p class="visually-hidden" id="game-help">
+        Use the arrow keys or W A S D to fly, space to fire commits,
+        P to pause and Enter to start.
+      </p>
+      <p class="visually-hidden" id="say" role="status" aria-live="polite"></p>
+
+      <div class="overlay" id="overlay" data-screen="ready">
+        <div class="panel">
+          <h2 id="ov-title">space-shooter</h2>
+          <p id="ov-body">Clear the field.</p>
+          <dl class="ov-stats" id="ov-stats"></dl>
+          <button id="ov-button" type="button">start &rarr;</button>
+          <p class="ov-foot" id="ov-foot"></p>
+        </div>
+      </div>
+    </div>
+
+    <p class="controls">
+      <span><kbd>&larr;</kbd><kbd>&rarr;</kbd><kbd>&uarr;</kbd><kbd>&darr;</kbd> or
+        <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> fly</span>
+      <span><kbd>space</kbd> fire <kbd>P</kbd> pause</span>
+      <span>touch: drag to fly, it fires on its own</span>
+    </p>
+  </main>
+
+  <footer class="foot">
+    <p>
+      Waves, block health and colours come from
+      <code>data/contributions.json</code> &mdash; the same file that draws
+      <a href="../">the heatmap</a>. No third-party services, no trackers, no build.
+    </p>
+    <p class="foot-links">
+      <a href="../">&larr; profile</a>
+      <a href="https://github.com/Bakkarranna/Bakkarrarna">repo</a>
+      <a href="https://github.com/Bakkarranna/Bakkarrarna/tree/main/scripts/make_space_shooter_data.py">how the waves are made</a>
+    </p>
+  </footer>
+</div>
+
+<script src="./data.js"></script>
+<script src="./game.js"></script>
+</body>
+</html>
