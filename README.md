@@ -38,6 +38,6 @@ $ python / typescript / php / kotlin  toolbox
 <a href="https://www.linkedin.com/in/muhammadabubakar-siddique"><img src="https://img.shields.io/badge/linkedin-muhammadabubakar--siddique-0a66c2?style=flat-square" alt="LinkedIn" /></a>
 <br><br>
 
-<sub>the portrait prints once, as ASCII, above a neofetch-style card · heatmap reveals diagonally · the city grows back-to-front and every building answers to hover and click · meters fill on a stagger · every panel above is generated from <code>data/contributions.json</code> and <code>data/projects.json</code> plus hand-authored copy by one GitHub Action that re-scrapes <code>github.com/users/Bakkarranna/contributions</code> daily — no third-party stat services, no tokens.</sub>
+<sub>the portrait prints once, as ASCII, above a neofetch-style card · heatmap reveals diagonally · the city grows back-to-front and every building answers to hover and click · meters fill on a stagger · every panel above is generated from <code>data/contributions.json</code> and <code>data/projects.json</code>, and the card's logo is the Synaptix mark traced into <code>data/synaptix-mark.json</code>, plus hand-authored copy by one GitHub Action that re-scrapes <code>github.com/users/Bakkarranna/contributions</code> daily — no third-party stat services, no tokens.</sub>
 
 </div>
