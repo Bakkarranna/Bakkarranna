@@ -23,12 +23,17 @@ embedding page's color scheme in Chromium).
 Run:  python scripts/make_info_card.py           # animated
       STATIC=1 python scripts/make_info_card.py  # frozen frame for local preview
 """
+import json
 import os
+import sys
 from pathlib import Path
 from xml.sax.saxutils import escape
 
 HERE = Path(__file__).resolve().parent
 REPO = HERE.parent
+sys.path.insert(0, str(HERE))
+
+import tile_mark  # noqa: E402  (paths in, so it needs the scripts dir on sys.path)
 W, H = 560, 340
 FONT = "'JetBrains Mono','Fira Mono','SFMono-Regular',Menlo,Consolas,monospace"
 
@@ -61,10 +66,12 @@ ROWS = [
     ("Also", "onboard vision for motorsport", LIGHT_ROWS[4], DARK["rows"][4]),
 ]
 
-# Synaptix mark: a rounded tile with a neural "S" -- two chevrons meeting at a
-# node, drawn as strokes so it stays crisp at any size and re-inks in dark.
+# Synaptix mark: a rounded tile holding the traced neural "S" -- two
+# interlocking arms with their gaps cut out, so it re-inks in dark.
 LOGO_TILE = 116
 LOGO_X, LOGO_Y = 30, 30
+# The mark's silhouette, traced off the source render by trace_mark.py.
+MARK = REPO / "data" / "synaptix-mark.json"
 
 
 def logo_tile() -> str:
@@ -78,23 +85,18 @@ def logo_tile() -> str:
 
 
 def logo_glyph() -> str:
-    """The 'S' as two strokes plus a synapse dot, centred in the tile."""
-    cx, cy = LOGO_X + LOGO_TILE / 2, LOGO_Y + LOGO_TILE / 2 + 2
-    s = LOGO_TILE / 116.0          # unit scale so the mark follows the tile
-    pp = [
-        f'<path class="gl" d="M{cx - 20 * s:.1f},{cy - 18 * s:.1f} '
-        f'C{cx + 6 * s:.1f},{cy - 24 * s:.1f} {cx + 22 * s:.1f},{cy - 4 * s:.1f} '
-        f'{cx + 2 * s:.1f},{cy:.1f} '
-        f'C{cx + 12 * s:.1f},{cy + 4 * s:.1f} {cx - 6 * s:.1f},{cy + 2 * s:.1f} '
-        f'{cx - 18 * s:.1f},{cy + 6 * s:.1f} '
-        f'C{cx - 26 * s:.1f},{cy + 16 * s:.1f} {cx + 2 * s:.1f},{cy + 26 * s:.1f} '
-        f'{cx + 20 * s:.1f},{cy + 20 * s:.1f}"/>',
-        f'<circle class="node" cx="{cx + 20 * s:.1f}" cy="{cy + 20 * s:.1f}" '
-        f'r="{4.5 * s:.1f}"/>',
-        f'<circle class="node2" cx="{cx - 20 * s:.1f}" cy="{cy - 18 * s:.1f}" '
-        f'r="{3.2 * s:.1f}"/>',
-    ]
-    return "".join(pp)
+    """The traced Synaptix mark: two <path> arms, gaps included.
+
+    The silhouette is authored data (data/synaptix-mark.json), not a hand-drawn
+    approximation: tile_mark.glyph scales and centres it into the tile, so the
+    card's logo is the same mark the favicon and the README badge carry.
+    """
+    try:
+        mark = json.loads(MARK.read_text(encoding="utf-8"))
+    except (OSError, ValueError) as exc:
+        raise SystemExit(f"[card] cannot read mark {MARK}: {exc}") from exc
+    return tile_mark.glyph(mark)
+
 
 
 def theme_css(static: bool) -> str:
@@ -104,9 +106,7 @@ def theme_css(static: bool) -> str:
         ".rule{stroke:#d0d7de}",
         ".tile{fill:#eef3ee}",
         ".tile-in{fill:#ffffff}",
-        ".gl{stroke:" + ACCENT + ";stroke-width:7;stroke-linecap:round;fill:none}",
-        ".node{fill:" + ACCENT + "}",
-        ".node2{fill:" + DIM + "}",
+        ".mk0,.mk1{fill:" + ACCENT + "}",
     ]
     for i, c in enumerate(SWATCHES):
         css.append(f".sw{i}{{fill:{c}}}")
@@ -127,8 +127,7 @@ def theme_css(static: bool) -> str:
     dark = [".fg{fill:" + DARK["fg"] + "}", ".dim{fill:" + DARK["dim"] + "}",
             ".rule{stroke:" + DARK["rule"] + "}",
             ".tile{fill:#12181f}", ".tile-in{fill:#0d1117}",
-            ".gl{stroke:" + DARK["px"] + "}",
-            ".node{fill:" + DARK["px"] + "}", ".node2{fill:" + DARK["dim"] + "}"]
+            ".mk0,.mk1{fill:" + DARK["px"] + "}"]
     for i, c in enumerate(DARK["swatches"]):
         dark.append(f".sw{i}{{fill:{c}}}")
     for i, c in enumerate(DARK["rows"]):
