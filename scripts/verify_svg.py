@@ -11,7 +11,8 @@ Checks:
   3. bakkarranna-ascii.svg: exactly ROWS text rows, one clipPath wipe + cursor
      an opacity-only reveal, and no clipPath or cursor rect -- that wipe is
      the animation that froze behind camo.
-  4. info-card.svg: story rows, pixel logo, colour swatches, per-line stagger.
+  4. info-card.svg: story rows, pixel logo (the traced Synaptix mark, byte for
+     byte), colour swatches, per-line stagger.
   5. skills.svg: one group per skill family, five meter segments per chip, and
      exactly as many lit segments as the authored levels add up to.
   6. stats-strip.svg: six KPI tiles and one bar per month, with monthly totals
@@ -38,6 +39,10 @@ from xml.etree import ElementTree
 
 REPO = Path(__file__).resolve().parents[1]
 DATA = REPO / "data" / "contributions.json"
+MARK = REPO / "data" / "synaptix-mark.json"
+
+sys.path.insert(0, str(REPO / "scripts"))
+import tile_mark  # noqa: E402  (reads the mark the card draws, not a copy)
 
 
 def check_heatmap(path: Path, report: list[str]) -> bool:
@@ -154,7 +159,10 @@ def check_card(path: Path, report: list[str]) -> bool:
         ok = False
 
     if 'class="logo"' not in text:
-        report.append("  FAIL card: missing pixel logo")
+        report.append("  FAIL card: missing logo group")
+        ok = False
+
+    if not check_mark(path, report):
         ok = False
 
     delays = re.findall(r"animation-delay:([\d.]+)s", text)
@@ -167,6 +175,39 @@ def check_card(path: Path, report: list[str]) -> bool:
     else:
         report.append("  OK   card: static finished frame")
     return ok
+
+
+def check_mark(path: Path, report: list[str]) -> bool:
+    """info-card.svg's logo must be the traced mark, not a hand-drawn 'S'.
+
+    The logo is authored data now (data/synaptix-mark.json), so the check reads
+    that data through the same path the generator uses and compares what
+    actually landed in the SVG. A logo that silently reverts to a stylised
+    "S" -- wrong mark, wrong gaps -- fails here instead of shipping.
+    """
+    try:
+        mark = json.loads(MARK.read_text(encoding="utf-8"))
+    except (OSError, ValueError) as exc:
+        report.append(f"  FAIL mark: cannot read {MARK}: {exc}")
+        return False
+
+    text = path.read_text(encoding="utf-8")
+    glyph = tile_mark.glyph(mark)
+    arms = len(mark["rings"])
+    if glyph not in text:
+        report.append(
+            f"  FAIL card: logo is not the traced mark ({arms} arms, "
+            "gaps included) from data/synaptix-mark.json")
+        return False
+    if f'fill-rule="evenodd"' not in glyph:
+        report.append("  FAIL card: mark arms lost their even-odd fill-rule")
+        return False
+    if re.search(r'class="(node|node2|gl)"', text):
+        report.append("  FAIL card: old hand-drawn logo classes still present")
+        return False
+    report.append(f"  OK   card: logo is the traced Synaptix mark "
+                  f"({arms} even-odd arms, gaps cut out)")
+    return True
 
 
 def check_no_scripts(path: Path, report: list[str]) -> bool:
