@@ -84,6 +84,20 @@ def logo_tile() -> str:
     )
 
 
+# Hard bound on the glyph: the mark is clipped to the inner plate, so the logo
+# can never be wider than the box the card puts it in.
+CLIP_ID = "logo-plate"
+
+
+def logo_clip() -> str:
+    return (
+        f'<clipPath id="{CLIP_ID}">'
+        f'<rect x="{LOGO_X + 8}" y="{LOGO_Y + 8}" width="{LOGO_TILE - 16}" '
+        f'height="{LOGO_TILE - 16}" rx="20" ry="20"/>'
+        "</clipPath>"
+    )
+
+
 def logo_glyph() -> str:
     """The traced Synaptix mark: two <path> arms, gaps included.
 
@@ -154,7 +168,9 @@ def build(static: bool) -> str:
 
     # ---- left column: logo + wordmark + swatches ---------------------------
     svg.append(
-        f'<g class="logo"{delay(0.20)}>{logo_tile()}{logo_glyph()}</g>'
+        f"<defs>{logo_clip()}</defs>"
+        f'<g class="logo"{delay(0.20)}>{logo_tile()}'
+        f'<g clip-path="url(#{CLIP_ID})">{logo_glyph()}</g></g>'
     )
     svg.append(
         f'<text class="title dim"{delay(0.15)} x="{LOGO_X + LOGO_TILE / 2}" '

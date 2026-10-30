@@ -23,7 +23,14 @@ MARK = "data/synaptix-mark.json"
 
 # The mark's silhouette spans y 55.1..121.5 in the source render, i.e. it sits
 # off-centre; fit() below centres it inside the square tile on the long axis.
-GAP = 0.012          # ring stroke pad, as a fraction of tile width
+#
+# GAP is the mark's margin inside the tile, as a fraction of the tile width.
+# 0.012 left the mark crossing the card's inner white plate: the plate is inset
+# 8px on each side (LOGO_TILE-16), and the mark came within 1.4px of the outer
+# tile edge -- wider than the box it sits in, which is what made the logo read
+# as oversized. 0.12 gives the mark an ~14px margin, comfortably inside the
+# inner plate, while keeping its own wide-and-short composition.
+GAP = 0.12           # ring stroke pad, as a fraction of tile width
 
 
 def _rings(mark: dict) -> list[list[tuple[float, float]]]:
