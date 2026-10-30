@@ -7,8 +7,8 @@ bounding box of drawn pixels and a coarse ASCII luminance preview so a blank
 or lopsided panel is obvious without eyeballing a PNG.
 
 Usage:
-    python scripts/raster_qa.py constellation.svg [more.svg ...]
-    python scripts/raster_qa.py --ascii constellation.svg
+    python scripts/raster_qa.py bakkarranna-ascii.svg [more.svg ...]
+    python scripts/raster_qa.py --ascii bakkarranna-ascii.svg
 
 Writes preview-shot.png / preview-dark.png in the repo root (gitignored).
 """

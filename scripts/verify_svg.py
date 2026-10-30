@@ -21,11 +21,9 @@ Checks:
      begins, month coverage and a language-stack block.
   8. projects.svg: one card per featured repo, wrapped blurbs within budget, and
      state badges matching data/projects.json.
-  9. constellation.svg: bounded sprite count, sky-cell sampling and the keyframes
-     that keep it alive.
- 10. Every panel: no <script>, no foreignObject, no remote reference -- camo
+  9. Every panel: no <script>, no foreignObject, no remote reference -- camo
      strips all three, so a panel depending on one is silently broken.
- 11. Animation totals so nothing freezes mid-print.
+ 10. Animation totals so nothing freezes mid-print.
 
 Usage: python scripts/verify_svg.py     # exits 1 on any failure
 """
@@ -550,9 +548,9 @@ def _balanced_block(css: str, open_at: int) -> str:
     """Body of the rule whose '{' sits at open_at, brace-matched.
 
     Stopping at the first '}' truncates an at-rule holding more than one
-    rule -- constellation's two-class collapse -- which drops classes out of
-    the check and lets them stay hidden. Braces inside @keyframes stop rules
-    are counted the same way, so the walk stays correct in there too.
+    rule, which drops classes out of the check and lets them stay hidden.
+    Braces inside @keyframes stop rules are counted the same way, so the
+    walk stays correct in there too.
     """
     depth = 0
     for i in range(open_at, len(css)):
@@ -596,7 +594,7 @@ def _ink_selectors(section: str) -> set[str]:
 
     Built the way _ink_rules splits them, so a class dropped from a grouped
     selector on one side counts as unpainted there. Bare tags count as well:
-    bakkarrarna-ascii.svg inks every glyph through `text{fill:...}`, so the
+    bakkarranna-ascii.svg inks every glyph through `text{fill:...}`, so the
     per-text fill attributes it also carries are dead weight rather than live
     fixed ink, and only a tag rule can say so.
     """
@@ -700,7 +698,7 @@ def check_theme_contract(path: Path, report: list[str]) -> bool:
     #    An attribute a class or tag rule already re-inks for both themes is
     #    harmless -- CSS beats presentation attributes, so the rule wins and
     #    the paint follows the theme. Judging the ink the element renders is
-    #    what keeps bakkarrarna-ascii.svg's per-text fill attributes (its ink
+    #    what keeps bakkarranna-ascii.svg's per-text fill attributes (its ink
     #    really comes from `text{fill:...}` on both sides) from failing a
     #    panel that is in fact fully themed.
     markup = re.sub(r"<style>.*?</style>", "", text, flags=re.S)
