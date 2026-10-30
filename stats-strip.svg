@@ -5,7 +5,7 @@
 <line class="rule" x1="16" y1="30" x2="844" y2="30" stroke-width="1"/>
 <g class="kpi" style="animation-delay:0.10s">
 <text x="16.0" y="52" font-size="10" class="dim">contributions</text>
-<text x="16.0" y="74" font-size="21" class="fg" font-weight="bold">203</text>
+<text x="16.0" y="74" font-size="21" class="fg" font-weight="bold">204</text>
 <text x="16.0" y="90" font-size="10" class="dim">last 12 months</text>
 </g>
 <g class="kpi" style="animation-delay:0.17s">
@@ -110,7 +110,7 @@
 <g class="bar" style="animation-delay:0.73s">
 <rect x="792.2" y="211.0" width="40" height="3" rx="1" class="track"/>
 <rect x="792.2" y="128.0" width="40" height="86" rx="2" class="b4"/>
-<text x="812.2" y="123.0" font-size="10" class="dim" text-anchor="middle">105</text>
+<text x="812.2" y="123.0" font-size="10" class="dim" text-anchor="middle">106</text>
 <text x="812.2" y="228.0" font-size="10" class="dim" text-anchor="middle">Oct</text>
 </g>
 </svg>
