@@ -53,7 +53,7 @@
   let palette = darkQuery.matches ? PALETTES.dark : PALETTES.light;
   let calm = calmQuery.matches;
 
-  const BEST_KEY = "bakkarrarna-spaceShooter-best";
+  const BEST_KEY = "bakkarranna-spaceShooter-best";
   const FIELD_PAD = 26;
   const COLS = 7; // one column per weekday, so the field is the heatmap on its side
 
