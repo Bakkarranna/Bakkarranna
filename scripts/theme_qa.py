@@ -1,7 +1,7 @@
 """Theme-QA the profile panels: every panel on BOTH backdrops, side by side.
 
 raster_qa.py renders one panel on a light and a dark wrapper; this drives it
-across all nine panels, keeps each shot, composes per-panel light/dark sheets,
+across all seven panels, keeps each shot, composes per-panel light/dark sheets,
 and prints a per-panel verdict about whether the art actually re-inks.
 
 The verdict is the point. A panel that keeps one fixed palette looks perfect in
@@ -53,8 +53,6 @@ PANELS = [
     "contrib-heatmap.svg",
     "projects.svg",
     "contribution-city.svg",
-    "constellation.svg",
-    "night-sky.svg",
     "bakkarranna-ascii.svg",
 ]
 
@@ -111,10 +109,9 @@ def frame_dominant(im) -> tuple[int, int, int]:
     """Dominant colour of the image's outer FRAME-pixel ring.
 
     Judging ink against the whole-image dominant would call a panel's own
-    base layer its background (night-sky paints a near-black card), which is
-    the colour its ink is meant to show against. The ring is the wrapper
-    showing through the margins, so it answers "what is this panel sitting
-    on" for every panel, themed or not.
+    base layer its background, which is the colour its ink is meant to show
+    against. The ring is the wrapper showing through the margins, so it
+    answers "what is this panel sitting on" for every panel, themed or not.
     """
     if im.width < FRAME * 2 + 1 or im.height < FRAME * 2 + 1:
         return _dominant(im)
