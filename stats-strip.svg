@@ -5,18 +5,18 @@
 <line class="rule" x1="16" y1="30" x2="844" y2="30" stroke-width="1"/>
 <g class="kpi" style="animation-delay:0.10s">
 <text x="16.0" y="52" font-size="10" class="dim">contributions</text>
-<text x="16.0" y="74" font-size="21" class="fg" font-weight="bold">205</text>
+<text x="16.0" y="74" font-size="21" class="fg" font-weight="bold">220</text>
 <text x="16.0" y="90" font-size="10" class="dim">last 12 months</text>
 </g>
 <g class="kpi" style="animation-delay:0.17s">
 <text x="154.0" y="52" font-size="10" class="dim">active days</text>
-<text x="154.0" y="74" font-size="21" class="fg" font-weight="bold">42</text>
+<text x="154.0" y="74" font-size="21" class="fg" font-weight="bold">44</text>
 <text x="154.0" y="90" font-size="10" class="dim">12% of the year</text>
 </g>
 <line class="rule" x1="146.0" y1="44" x2="146.0" y2="92" stroke-width="1"/>
 <g class="kpi" style="animation-delay:0.24s">
 <text x="292.0" y="52" font-size="10" class="dim">current streak</text>
-<text x="292.0" y="74" font-size="21" class="fg" font-weight="bold">0</text>
+<text x="292.0" y="74" font-size="21" class="fg" font-weight="bold">3</text>
 <text x="292.0" y="90" font-size="10" class="dim">days</text>
 </g>
 <line class="rule" x1="284.0" y1="44" x2="284.0" y2="92" stroke-width="1"/>
@@ -41,76 +41,78 @@
 <g class="chart-label" style="animation-delay:0.10s"><text x="16" y="116" font-size="11" class="dim">contributions per month</text></g>
 <g class="bar" style="animation-delay:0.25s">
 <rect x="27.8" y="211.0" width="40" height="3" rx="1" class="track"/>
-<text x="47.8" y="228.0" font-size="10" class="dim" text-anchor="middle">Oct</text>
+<text x="47.8" y="228.0" font-size="10" class="dim" text-anchor="middle">Nov</text>
 </g>
 <g class="bar" style="animation-delay:0.29s">
 <rect x="91.5" y="211.0" width="40" height="3" rx="1" class="track"/>
-<text x="111.5" y="228.0" font-size="10" class="dim" text-anchor="middle">Nov</text>
+<rect x="91.5" y="206.0" width="40" height="8" rx="2" class="b0"/>
+<text x="111.5" y="201.0" font-size="10" class="dim" text-anchor="middle">11</text>
+<text x="111.5" y="228.0" font-size="10" class="dim" text-anchor="middle">Dec</text>
 </g>
 <g class="bar" style="animation-delay:0.33s">
 <rect x="155.2" y="211.0" width="40" height="3" rx="1" class="track"/>
-<rect x="155.2" y="205.0" width="40" height="9" rx="2" class="b0"/>
-<text x="175.2" y="200.0" font-size="10" class="dim" text-anchor="middle">11</text>
-<text x="175.2" y="228.0" font-size="10" class="dim" text-anchor="middle">Dec</text>
+<rect x="155.2" y="212.0" width="40" height="2" rx="2" class="b0"/>
+<text x="175.2" y="207.0" font-size="10" class="dim" text-anchor="middle">3</text>
+<text x="175.2" y="228.0" font-size="10" class="dim" text-anchor="middle">Jan '26</text>
 </g>
 <g class="bar" style="animation-delay:0.37s">
 <rect x="218.9" y="211.0" width="40" height="3" rx="1" class="track"/>
 <rect x="218.9" y="212.0" width="40" height="2" rx="2" class="b0"/>
-<text x="238.9" y="207.0" font-size="10" class="dim" text-anchor="middle">3</text>
-<text x="238.9" y="228.0" font-size="10" class="dim" text-anchor="middle">Jan '26</text>
+<text x="238.9" y="207.0" font-size="10" class="dim" text-anchor="middle">2</text>
+<text x="238.9" y="228.0" font-size="10" class="dim" text-anchor="middle">Feb</text>
 </g>
 <g class="bar" style="animation-delay:0.41s">
 <rect x="282.6" y="211.0" width="40" height="3" rx="1" class="track"/>
 <rect x="282.6" y="212.0" width="40" height="2" rx="2" class="b0"/>
-<text x="302.6" y="207.0" font-size="10" class="dim" text-anchor="middle">2</text>
-<text x="302.6" y="228.0" font-size="10" class="dim" text-anchor="middle">Feb</text>
+<text x="302.6" y="207.0" font-size="10" class="dim" text-anchor="middle">3</text>
+<text x="302.6" y="228.0" font-size="10" class="dim" text-anchor="middle">Mar</text>
 </g>
 <g class="bar" style="animation-delay:0.45s">
 <rect x="346.3" y="211.0" width="40" height="3" rx="1" class="track"/>
-<rect x="346.3" y="212.0" width="40" height="2" rx="2" class="b0"/>
-<text x="366.3" y="207.0" font-size="10" class="dim" text-anchor="middle">3</text>
-<text x="366.3" y="228.0" font-size="10" class="dim" text-anchor="middle">Mar</text>
+<rect x="346.3" y="209.0" width="40" height="5" rx="2" class="b0"/>
+<text x="366.3" y="204.0" font-size="10" class="dim" text-anchor="middle">6</text>
+<text x="366.3" y="228.0" font-size="10" class="dim" text-anchor="middle">Apr</text>
 </g>
 <g class="bar" style="animation-delay:0.49s">
 <rect x="410.0" y="211.0" width="40" height="3" rx="1" class="track"/>
-<rect x="410.0" y="209.0" width="40" height="5" rx="2" class="b0"/>
-<text x="430.0" y="204.0" font-size="10" class="dim" text-anchor="middle">6</text>
-<text x="430.0" y="228.0" font-size="10" class="dim" text-anchor="middle">Apr</text>
+<rect x="410.0" y="192.0" width="40" height="22" rx="2" class="b1"/>
+<text x="430.0" y="187.0" font-size="10" class="dim" text-anchor="middle">29</text>
+<text x="430.0" y="228.0" font-size="10" class="dim" text-anchor="middle">May</text>
 </g>
 <g class="bar" style="animation-delay:0.53s">
 <rect x="473.7" y="211.0" width="40" height="3" rx="1" class="track"/>
-<rect x="473.7" y="191.0" width="40" height="23" rx="2" class="b1"/>
-<text x="493.7" y="186.0" font-size="10" class="dim" text-anchor="middle">29</text>
-<text x="493.7" y="228.0" font-size="10" class="dim" text-anchor="middle">May</text>
+<rect x="473.7" y="209.0" width="40" height="5" rx="2" class="b0"/>
+<text x="493.7" y="204.0" font-size="10" class="dim" text-anchor="middle">7</text>
+<text x="493.7" y="228.0" font-size="10" class="dim" text-anchor="middle">Jun</text>
 </g>
 <g class="bar" style="animation-delay:0.57s">
 <rect x="537.4" y="211.0" width="40" height="3" rx="1" class="track"/>
-<rect x="537.4" y="208.0" width="40" height="6" rx="2" class="b0"/>
-<text x="557.4" y="203.0" font-size="10" class="dim" text-anchor="middle">7</text>
-<text x="557.4" y="228.0" font-size="10" class="dim" text-anchor="middle">Jun</text>
+<rect x="537.4" y="199.0" width="40" height="15" rx="2" class="b0"/>
+<text x="557.4" y="194.0" font-size="10" class="dim" text-anchor="middle">20</text>
+<text x="557.4" y="228.0" font-size="10" class="dim" text-anchor="middle">Jul</text>
 </g>
 <g class="bar" style="animation-delay:0.61s">
 <rect x="601.1" y="211.0" width="40" height="3" rx="1" class="track"/>
-<rect x="601.1" y="198.0" width="40" height="16" rx="2" class="b0"/>
-<text x="621.1" y="193.0" font-size="10" class="dim" text-anchor="middle">20</text>
-<text x="621.1" y="228.0" font-size="10" class="dim" text-anchor="middle">Jul</text>
+<rect x="601.1" y="203.0" width="40" height="11" rx="2" class="b0"/>
+<text x="621.1" y="198.0" font-size="10" class="dim" text-anchor="middle">14</text>
+<text x="621.1" y="228.0" font-size="10" class="dim" text-anchor="middle">Aug</text>
 </g>
 <g class="bar" style="animation-delay:0.65s">
 <rect x="664.8" y="211.0" width="40" height="3" rx="1" class="track"/>
-<rect x="664.8" y="203.0" width="40" height="11" rx="2" class="b0"/>
-<text x="684.8" y="198.0" font-size="10" class="dim" text-anchor="middle">14</text>
-<text x="684.8" y="228.0" font-size="10" class="dim" text-anchor="middle">Aug</text>
+<rect x="664.8" y="212.0" width="40" height="2" rx="2" class="b0"/>
+<text x="684.8" y="207.0" font-size="10" class="dim" text-anchor="middle">3</text>
+<text x="684.8" y="228.0" font-size="10" class="dim" text-anchor="middle">Sep</text>
 </g>
 <g class="bar" style="animation-delay:0.69s">
 <rect x="728.5" y="211.0" width="40" height="3" rx="1" class="track"/>
-<rect x="728.5" y="212.0" width="40" height="2" rx="2" class="b0"/>
-<text x="748.5" y="207.0" font-size="10" class="dim" text-anchor="middle">3</text>
-<text x="748.5" y="228.0" font-size="10" class="dim" text-anchor="middle">Sep</text>
+<rect x="728.5" y="128.0" width="40" height="86" rx="2" class="b4"/>
+<text x="748.5" y="123.0" font-size="10" class="dim" text-anchor="middle">112</text>
+<text x="748.5" y="228.0" font-size="10" class="dim" text-anchor="middle">Oct</text>
 </g>
 <g class="bar" style="animation-delay:0.73s">
 <rect x="792.2" y="211.0" width="40" height="3" rx="1" class="track"/>
-<rect x="792.2" y="128.0" width="40" height="86" rx="2" class="b4"/>
-<text x="812.2" y="123.0" font-size="10" class="dim" text-anchor="middle">107</text>
-<text x="812.2" y="228.0" font-size="10" class="dim" text-anchor="middle">Oct</text>
+<rect x="792.2" y="206.0" width="40" height="8" rx="2" class="b0"/>
+<text x="812.2" y="201.0" font-size="10" class="dim" text-anchor="middle">10</text>
+<text x="812.2" y="228.0" font-size="10" class="dim" text-anchor="middle">Nov</text>
 </g>
 </svg>

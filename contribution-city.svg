@@ -4,10 +4,10 @@
 <text x="28" y="42" font-size="9.5" class="dim">every day of the last 12 months, as a building</text>
 <line class="rule" x1="28" y1="52" x2="352" y2="52" stroke-width="1"/>
 <text x="28" y="72" font-size="9" class="dim">contributions</text>
-<text x="28" y="92" font-size="20" font-weight="bold" class="fg">205</text>
+<text x="28" y="92" font-size="20" font-weight="bold" class="fg">220</text>
 <text x="120" y="86" font-size="8.5" class="dim">last 12 months</text>
 <text x="28" y="116" font-size="9" class="dim">active days</text>
-<text x="28" y="136" font-size="20" font-weight="bold" class="fg">42</text>
+<text x="28" y="136" font-size="20" font-weight="bold" class="fg">44</text>
 <text x="120" y="130" font-size="8.5" class="dim">12% of the year</text>
 <text x="28" y="160" font-size="9" class="dim">busiest day</text>
 <text x="28" y="180" font-size="20" font-weight="bold" class="fg">27</text>
@@ -89,15 +89,15 @@
 <g class="tile" style="animation-delay:0.134s"><path d="M423.0,269.5 430.0,273.0 423.0,276.5 416.0,273.0Z"/></g>
 <g class="tile" style="animation-delay:0.134s"><path d="M409.0,269.5 416.0,273.0 409.0,276.5 402.0,273.0Z"/></g>
 <g class="tile" style="animation-delay:0.134s"><path d="M395.0,269.5 402.0,273.0 395.0,276.5 388.0,273.0Z"/></g>
-<g class="tile" style="animation-delay:0.146s"><path d="M486.0,273.0 493.0,276.5 486.0,280.0 479.0,276.5Z"/></g>
+<g class="tw" style="animation-delay:0.146s"><path class="r0" d="M493.0,262.9 486.0,266.4 486.0,280.0 493.0,276.5Z"/><path class="l0" d="M479.0,262.9 486.0,266.4 486.0,280.0 479.0,276.5Z"/>
+<path class="t0" d="M479.0,262.9 486.0,259.4 493.0,262.9 486.0,266.4Z"/></g>
 <g class="tile" style="animation-delay:0.146s"><path d="M472.0,273.0 479.0,276.5 472.0,280.0 465.0,276.5Z"/></g>
 <g class="tile" style="animation-delay:0.146s"><path d="M458.0,273.0 465.0,276.5 458.0,280.0 451.0,276.5Z"/></g>
 <g class="tile" style="animation-delay:0.146s"><path d="M444.0,273.0 451.0,276.5 444.0,280.0 437.0,276.5Z"/></g>
 <g class="tile" style="animation-delay:0.146s"><path d="M430.0,273.0 437.0,276.5 430.0,280.0 423.0,276.5Z"/></g>
 <g class="tile" style="animation-delay:0.146s"><path d="M416.0,273.0 423.0,276.5 416.0,280.0 409.0,276.5Z"/></g>
 <g class="tile" style="animation-delay:0.146s"><path d="M402.0,273.0 409.0,276.5 402.0,280.0 395.0,276.5Z"/></g>
-<g class="tw" style="animation-delay:0.158s"><path class="r0" d="M500.0,266.4 493.0,269.9 493.0,283.5 500.0,280.0Z"/><path class="l0" d="M486.0,266.4 493.0,269.9 493.0,283.5 486.0,280.0Z"/>
-<path class="t0" d="M486.0,266.4 493.0,262.9 500.0,266.4 493.0,269.9Z"/></g>
+<g class="tile" style="animation-delay:0.158s"><path d="M493.0,276.5 500.0,280.0 493.0,283.5 486.0,280.0Z"/></g>
 <g class="tile" style="animation-delay:0.158s"><path d="M479.0,276.5 486.0,280.0 479.0,283.5 472.0,280.0Z"/></g>
 <g class="tile" style="animation-delay:0.158s"><path d="M465.0,276.5 472.0,280.0 465.0,283.5 458.0,280.0Z"/></g>
 <g class="tile" style="animation-delay:0.158s"><path d="M451.0,276.5 458.0,280.0 451.0,283.5 444.0,280.0Z"/></g>
@@ -111,47 +111,47 @@
 <g class="tile" style="animation-delay:0.170s"><path d="M444.0,280.0 451.0,283.5 444.0,287.0 437.0,283.5Z"/></g>
 <g class="tile" style="animation-delay:0.170s"><path d="M430.0,280.0 437.0,283.5 430.0,287.0 423.0,283.5Z"/></g>
 <g class="tile" style="animation-delay:0.170s"><path d="M416.0,280.0 423.0,283.5 416.0,287.0 409.0,283.5Z"/></g>
-<g class="tile" style="animation-delay:0.182s"><path d="M507.0,283.5 514.0,287.0 507.0,290.5 500.0,287.0Z"/></g>
+<g class="tw" style="animation-delay:0.182s"><path class="r0" d="M514.0,276.2 507.0,279.7 507.0,290.5 514.0,287.0Z"/><path class="l0" d="M500.0,276.2 507.0,279.7 507.0,290.5 500.0,287.0Z"/>
+<path class="t0" d="M500.0,276.2 507.0,272.7 514.0,276.2 507.0,279.7Z"/></g>
 <g class="tile" style="animation-delay:0.182s"><path d="M493.0,283.5 500.0,287.0 493.0,290.5 486.0,287.0Z"/></g>
 <g class="tile" style="animation-delay:0.182s"><path d="M479.0,283.5 486.0,287.0 479.0,290.5 472.0,287.0Z"/></g>
 <g class="tile" style="animation-delay:0.182s"><path d="M465.0,283.5 472.0,287.0 465.0,290.5 458.0,287.0Z"/></g>
 <g class="tile" style="animation-delay:0.182s"><path d="M451.0,283.5 458.0,287.0 451.0,290.5 444.0,287.0Z"/></g>
 <g class="tile" style="animation-delay:0.182s"><path d="M437.0,283.5 444.0,287.0 437.0,290.5 430.0,287.0Z"/></g>
 <g class="tile" style="animation-delay:0.182s"><path d="M423.0,283.5 430.0,287.0 423.0,290.5 416.0,287.0Z"/></g>
-<g class="tw" style="animation-delay:0.194s"><path class="r0" d="M521.0,279.7 514.0,283.2 514.0,294.0 521.0,290.5Z"/><path class="l0" d="M507.0,279.7 514.0,283.2 514.0,294.0 507.0,290.5Z"/>
-<path class="t0" d="M507.0,279.7 514.0,276.2 521.0,279.7 514.0,283.2Z"/></g>
+<g class="tile" style="animation-delay:0.194s"><path d="M514.0,287.0 521.0,290.5 514.0,294.0 507.0,290.5Z"/></g>
 <g class="tile" style="animation-delay:0.194s"><path d="M500.0,287.0 507.0,290.5 500.0,294.0 493.0,290.5Z"/></g>
 <g class="tile" style="animation-delay:0.194s"><path d="M486.0,287.0 493.0,290.5 486.0,294.0 479.0,290.5Z"/></g>
-<g class="tile" style="animation-delay:0.194s"><path d="M472.0,287.0 479.0,290.5 472.0,294.0 465.0,290.5Z"/></g>
+<g class="tw" style="animation-delay:0.194s"><path class="r0" d="M479.0,276.9 472.0,280.4 472.0,294.0 479.0,290.5Z"/><path class="l0" d="M465.0,276.9 472.0,280.4 472.0,294.0 465.0,290.5Z"/>
+<path class="t0" d="M465.0,276.9 472.0,273.4 479.0,276.9 472.0,280.4Z"/></g>
 <g class="tile" style="animation-delay:0.194s"><path d="M458.0,287.0 465.0,290.5 458.0,294.0 451.0,290.5Z"/></g>
-<g class="tile" style="animation-delay:0.194s"><path d="M444.0,287.0 451.0,290.5 444.0,294.0 437.0,290.5Z"/></g>
+<g class="tw" style="animation-delay:0.194s"><path class="r1" d="M451.0,260.0 444.0,263.5 444.0,294.0 451.0,290.5Z"/><path class="l1" d="M437.0,260.0 444.0,263.5 444.0,294.0 437.0,290.5Z"/>
+<path class="win" d="M438.8,268.8 440.4,269.8 438.8,270.8 437.1,269.8Z"/>
+<path class="win" d="M442.2,270.5 443.9,271.5 442.2,272.5 440.6,271.5Z"/>
+<path class="win" d="M438.8,281.5 440.4,282.5 438.8,283.5 437.1,282.5Z"/>
+<path class="win" d="M442.2,283.2 443.9,284.2 442.2,285.2 440.6,284.2Z"/>
+<path class="win" d="M449.2,268.8 450.9,269.8 449.2,270.8 447.6,269.8Z"/>
+<path class="win" d="M445.8,270.5 447.4,271.5 445.8,272.5 444.1,271.5Z"/>
+<path class="win" d="M449.2,281.5 450.9,282.5 449.2,283.5 447.6,282.5Z"/>
+<path class="win" d="M445.8,283.2 447.4,284.2 445.8,285.2 444.1,284.2Z"/>
+<path class="t1" d="M437.0,260.0 444.0,256.5 451.0,260.0 444.0,263.5Z"/></g>
 <g class="tile" style="animation-delay:0.194s"><path d="M430.0,287.0 437.0,290.5 430.0,294.0 423.0,290.5Z"/></g>
-<g class="tile" style="animation-delay:0.206s"><path d="M521.0,290.5 528.0,294.0 521.0,297.5 514.0,294.0Z"/></g>
+<g class="tw" style="animation-delay:0.206s"><path class="r0" d="M528.0,280.4 521.0,283.9 521.0,297.5 528.0,294.0Z"/><path class="l0" d="M514.0,280.4 521.0,283.9 521.0,297.5 514.0,294.0Z"/>
+<path class="t0" d="M514.0,280.4 521.0,276.9 528.0,280.4 521.0,283.9Z"/></g>
 <g class="tile" style="animation-delay:0.206s"><path d="M507.0,290.5 514.0,294.0 507.0,297.5 500.0,294.0Z"/></g>
 <g class="tile" style="animation-delay:0.206s"><path d="M493.0,290.5 500.0,294.0 493.0,297.5 486.0,294.0Z"/></g>
-<g class="tw" style="animation-delay:0.206s"><path class="r0" d="M486.0,280.4 479.0,283.9 479.0,297.5 486.0,294.0Z"/><path class="l0" d="M472.0,280.4 479.0,283.9 479.0,297.5 472.0,294.0Z"/>
-<path class="t0" d="M472.0,280.4 479.0,276.9 486.0,280.4 479.0,283.9Z"/></g>
+<g class="tile" style="animation-delay:0.206s"><path d="M479.0,290.5 486.0,294.0 479.0,297.5 472.0,294.0Z"/></g>
 <g class="tile" style="animation-delay:0.206s"><path d="M465.0,290.5 472.0,294.0 465.0,297.5 458.0,294.0Z"/></g>
-<g class="tw" style="animation-delay:0.206s"><path class="r1" d="M458.0,263.5 451.0,267.0 451.0,297.5 458.0,294.0Z"/><path class="l1" d="M444.0,263.5 451.0,267.0 451.0,297.5 444.0,294.0Z"/>
-<path class="win" d="M445.8,272.3 447.4,273.3 445.8,274.3 444.1,273.3Z"/>
-<path class="win" d="M449.2,274.0 450.9,275.0 449.2,276.0 447.6,275.0Z"/>
-<path class="win" d="M445.8,285.0 447.4,286.0 445.8,287.0 444.1,286.0Z"/>
-<path class="win" d="M449.2,286.7 450.9,287.7 449.2,288.7 447.6,287.7Z"/>
-<path class="win" d="M456.2,272.3 457.9,273.3 456.2,274.3 454.6,273.3Z"/>
-<path class="win" d="M452.8,274.0 454.4,275.0 452.8,276.0 451.1,275.0Z"/>
-<path class="win" d="M456.2,285.0 457.9,286.0 456.2,287.0 454.6,286.0Z"/>
-<path class="win" d="M452.8,286.7 454.4,287.7 452.8,288.7 451.1,287.7Z"/>
-<path class="t1" d="M444.0,263.5 451.0,260.0 458.0,263.5 451.0,267.0Z"/></g>
-<g class="tile" style="animation-delay:0.206s"><path d="M437.0,290.5 444.0,294.0 437.0,297.5 430.0,294.0Z"/></g>
-<g class="tw" style="animation-delay:0.218s"><path class="r0" d="M535.0,283.9 528.0,287.4 528.0,301.0 535.0,297.5Z"/><path class="l0" d="M521.0,283.9 528.0,287.4 528.0,301.0 521.0,297.5Z"/>
-<path class="t0" d="M521.0,283.9 528.0,280.4 535.0,283.9 528.0,287.4Z"/></g>
+<g class="tile" style="animation-delay:0.206s"><path d="M451.0,290.5 458.0,294.0 451.0,297.5 444.0,294.0Z"/></g>
+<g class="tw" style="animation-delay:0.206s"><path class="r0" d="M444.0,283.2 437.0,286.7 437.0,297.5 444.0,294.0Z"/><path class="l0" d="M430.0,283.2 437.0,286.7 437.0,297.5 430.0,294.0Z"/>
+<path class="t0" d="M430.0,283.2 437.0,279.7 444.0,283.2 437.0,286.7Z"/></g>
+<g class="tile" style="animation-delay:0.218s"><path d="M528.0,294.0 535.0,297.5 528.0,301.0 521.0,297.5Z"/></g>
 <g class="tile" style="animation-delay:0.218s"><path d="M514.0,294.0 521.0,297.5 514.0,301.0 507.0,297.5Z"/></g>
 <g class="tile" style="animation-delay:0.218s"><path d="M500.0,294.0 507.0,297.5 500.0,301.0 493.0,297.5Z"/></g>
 <g class="tile" style="animation-delay:0.218s"><path d="M486.0,294.0 493.0,297.5 486.0,301.0 479.0,297.5Z"/></g>
 <g class="tile" style="animation-delay:0.218s"><path d="M472.0,294.0 479.0,297.5 472.0,301.0 465.0,297.5Z"/></g>
 <g class="tile" style="animation-delay:0.218s"><path d="M458.0,294.0 465.0,297.5 458.0,301.0 451.0,297.5Z"/></g>
-<g class="tw" style="animation-delay:0.218s"><path class="r0" d="M451.0,286.7 444.0,290.2 444.0,301.0 451.0,297.5Z"/><path class="l0" d="M437.0,286.7 444.0,290.2 444.0,301.0 437.0,297.5Z"/>
-<path class="t0" d="M437.0,286.7 444.0,283.2 451.0,286.7 444.0,290.2Z"/></g>
+<g class="tile" style="animation-delay:0.218s"><path d="M444.0,294.0 451.0,297.5 444.0,301.0 437.0,297.5Z"/></g>
 <g class="tile" style="animation-delay:0.230s"><path d="M535.0,297.5 542.0,301.0 535.0,304.5 528.0,301.0Z"/></g>
 <g class="tile" style="animation-delay:0.230s"><path d="M521.0,297.5 528.0,301.0 521.0,304.5 514.0,301.0Z"/></g>
 <g class="tile" style="animation-delay:0.230s"><path d="M507.0,297.5 514.0,301.0 507.0,304.5 500.0,301.0Z"/></g>
@@ -205,15 +205,15 @@
 <g class="tile" style="animation-delay:0.314s"><path d="M570.0,322.0 577.0,325.5 570.0,329.0 563.0,325.5Z"/></g>
 <g class="tile" style="animation-delay:0.314s"><path d="M556.0,322.0 563.0,325.5 556.0,329.0 549.0,325.5Z"/></g>
 <g class="tile" style="animation-delay:0.314s"><path d="M542.0,322.0 549.0,325.5 542.0,329.0 535.0,325.5Z"/></g>
-<g class="tile" style="animation-delay:0.314s"><path d="M528.0,322.0 535.0,325.5 528.0,329.0 521.0,325.5Z"/></g>
+<g class="tw" style="animation-delay:0.314s"><path class="r0" d="M535.0,309.1 528.0,312.6 528.0,329.0 535.0,325.5Z"/><path class="l0" d="M521.0,309.1 528.0,312.6 528.0,329.0 521.0,325.5Z"/>
+<path class="t0" d="M521.0,309.1 528.0,305.6 535.0,309.1 528.0,312.6Z"/></g>
 <g class="tile" style="animation-delay:0.314s"><path d="M514.0,322.0 521.0,325.5 514.0,329.0 507.0,325.5Z"/></g>
 <g class="tile" style="animation-delay:0.314s"><path d="M500.0,322.0 507.0,325.5 500.0,329.0 493.0,325.5Z"/></g>
 <g class="tile" style="animation-delay:0.326s"><path d="M591.0,325.5 598.0,329.0 591.0,332.5 584.0,329.0Z"/></g>
 <g class="tile" style="animation-delay:0.326s"><path d="M577.0,325.5 584.0,329.0 577.0,332.5 570.0,329.0Z"/></g>
 <g class="tile" style="animation-delay:0.326s"><path d="M563.0,325.5 570.0,329.0 563.0,332.5 556.0,329.0Z"/></g>
 <g class="tile" style="animation-delay:0.326s"><path d="M549.0,325.5 556.0,329.0 549.0,332.5 542.0,329.0Z"/></g>
-<g class="tw" style="animation-delay:0.326s"><path class="r0" d="M542.0,312.6 535.0,316.1 535.0,332.5 542.0,329.0Z"/><path class="l0" d="M528.0,312.6 535.0,316.1 535.0,332.5 528.0,329.0Z"/>
-<path class="t0" d="M528.0,312.6 535.0,309.1 542.0,312.6 535.0,316.1Z"/></g>
+<g class="tile" style="animation-delay:0.326s"><path d="M535.0,325.5 542.0,329.0 535.0,332.5 528.0,329.0Z"/></g>
 <g class="tile" style="animation-delay:0.326s"><path d="M521.0,325.5 528.0,329.0 521.0,332.5 514.0,329.0Z"/></g>
 <g class="tile" style="animation-delay:0.326s"><path d="M507.0,325.5 514.0,329.0 507.0,332.5 500.0,329.0Z"/></g>
 <g class="tile" style="animation-delay:0.338s"><path d="M598.0,329.0 605.0,332.5 598.0,336.0 591.0,332.5Z"/></g>
@@ -247,61 +247,61 @@
 <g class="tile" style="animation-delay:0.386s"><path d="M626.0,343.0 633.0,346.5 626.0,350.0 619.0,346.5Z"/></g>
 <g class="tile" style="animation-delay:0.386s"><path d="M612.0,343.0 619.0,346.5 612.0,350.0 605.0,346.5Z"/></g>
 <g class="tile" style="animation-delay:0.386s"><path d="M598.0,343.0 605.0,346.5 598.0,350.0 591.0,346.5Z"/></g>
-<g class="tile" style="animation-delay:0.386s"><path d="M584.0,343.0 591.0,346.5 584.0,350.0 577.0,346.5Z"/></g>
+<g class="tw" style="animation-delay:0.386s"><path class="r1" d="M591.0,321.6 584.0,325.1 584.0,350.0 591.0,346.5Z"/><path class="l1" d="M577.0,321.6 584.0,325.1 584.0,350.0 577.0,346.5Z"/>
+<path class="t1" d="M577.0,321.6 584.0,318.1 591.0,321.6 584.0,325.1Z"/></g>
 <g class="tile" style="animation-delay:0.386s"><path d="M570.0,343.0 577.0,346.5 570.0,350.0 563.0,346.5Z"/></g>
 <g class="tile" style="animation-delay:0.386s"><path d="M556.0,343.0 563.0,346.5 556.0,350.0 549.0,346.5Z"/></g>
 <g class="tile" style="animation-delay:0.386s"><path d="M542.0,343.0 549.0,346.5 542.0,350.0 535.0,346.5Z"/></g>
-<g class="tile" style="animation-delay:0.398s"><path d="M633.0,346.5 640.0,350.0 633.0,353.5 626.0,350.0Z"/></g>
+<g class="tw" style="animation-delay:0.398s"><path class="r0" d="M640.0,333.6 633.0,337.1 633.0,353.5 640.0,350.0Z"/><path class="l0" d="M626.0,333.6 633.0,337.1 633.0,353.5 626.0,350.0Z"/>
+<path class="t0" d="M626.0,333.6 633.0,330.1 640.0,333.6 633.0,337.1Z"/></g>
 <g class="tile" style="animation-delay:0.398s"><path d="M619.0,346.5 626.0,350.0 619.0,353.5 612.0,350.0Z"/></g>
 <g class="tile" style="animation-delay:0.398s"><path d="M605.0,346.5 612.0,350.0 605.0,353.5 598.0,350.0Z"/></g>
-<g class="tw" style="animation-delay:0.398s"><path class="r1" d="M598.0,325.1 591.0,328.6 591.0,353.5 598.0,350.0Z"/><path class="l1" d="M584.0,325.1 591.0,328.6 591.0,353.5 584.0,350.0Z"/>
-<path class="t1" d="M584.0,325.1 591.0,321.6 598.0,325.1 591.0,328.6Z"/></g>
+<g class="tile" style="animation-delay:0.398s"><path d="M591.0,346.5 598.0,350.0 591.0,353.5 584.0,350.0Z"/></g>
 <g class="tile" style="animation-delay:0.398s"><path d="M577.0,346.5 584.0,350.0 577.0,353.5 570.0,350.0Z"/></g>
 <g class="tile" style="animation-delay:0.398s"><path d="M563.0,346.5 570.0,350.0 563.0,353.5 556.0,350.0Z"/></g>
 <g class="tile" style="animation-delay:0.398s"><path d="M549.0,346.5 556.0,350.0 549.0,353.5 542.0,350.0Z"/></g>
-<g class="tw" style="animation-delay:0.410s"><path class="r0" d="M647.0,337.1 640.0,340.6 640.0,357.0 647.0,353.5Z"/><path class="l0" d="M633.0,337.1 640.0,340.6 640.0,357.0 633.0,353.5Z"/>
-<path class="t0" d="M633.0,337.1 640.0,333.6 647.0,337.1 640.0,340.6Z"/></g>
+<g class="tile" style="animation-delay:0.410s"><path d="M640.0,350.0 647.0,353.5 640.0,357.0 633.0,353.5Z"/></g>
 <g class="tile" style="animation-delay:0.410s"><path d="M626.0,350.0 633.0,353.5 626.0,357.0 619.0,353.5Z"/></g>
-<g class="tile" style="animation-delay:0.410s"><path d="M612.0,350.0 619.0,353.5 612.0,357.0 605.0,353.5Z"/></g>
-<g class="tile" style="animation-delay:0.410s"><path d="M598.0,350.0 605.0,353.5 598.0,357.0 591.0,353.5Z"/></g>
+<g class="tw" style="animation-delay:0.410s"><path class="r0" d="M619.0,339.9 612.0,343.4 612.0,357.0 619.0,353.5Z"/><path class="l0" d="M605.0,339.9 612.0,343.4 612.0,357.0 605.0,353.5Z"/>
+<path class="t0" d="M605.0,339.9 612.0,336.4 619.0,339.9 612.0,343.4Z"/></g>
+<g class="tw" style="animation-delay:0.410s"><path class="r1" d="M605.0,320.2 598.0,323.7 598.0,357.0 605.0,353.5Z"/><path class="l1" d="M591.0,320.2 598.0,323.7 598.0,357.0 591.0,353.5Z"/>
+<path class="win" d="M592.8,329.8 594.5,330.8 592.8,331.8 591.0,330.8Z"/>
+<path class="win" d="M596.2,331.5 598.0,332.5 596.2,333.5 594.5,332.5Z"/>
+<path class="win" d="M592.8,343.7 594.5,344.7 592.8,345.7 591.0,344.7Z"/>
+<path class="win" d="M596.2,345.4 598.0,346.4 596.2,347.4 594.5,346.4Z"/>
+<path class="win" d="M603.2,329.8 605.0,330.8 603.2,331.8 601.5,330.8Z"/>
+<path class="win" d="M599.8,331.5 601.5,332.5 599.8,333.5 598.0,332.5Z"/>
+<path class="win" d="M603.2,343.7 605.0,344.7 603.2,345.7 601.5,344.7Z"/>
+<path class="win" d="M599.8,345.4 601.5,346.4 599.8,347.4 598.0,346.4Z"/>
+<path class="t1" d="M591.0,320.2 598.0,316.7 605.0,320.2 598.0,323.7Z"/></g>
 <g class="tile" style="animation-delay:0.410s"><path d="M584.0,350.0 591.0,353.5 584.0,357.0 577.0,353.5Z"/></g>
-<g class="tile" style="animation-delay:0.410s"><path d="M570.0,350.0 577.0,353.5 570.0,357.0 563.0,353.5Z"/></g>
+<g class="tw" style="animation-delay:0.410s"><path class="r0" d="M577.0,337.1 570.0,340.6 570.0,357.0 577.0,353.5Z"/><path class="l0" d="M563.0,337.1 570.0,340.6 570.0,357.0 563.0,353.5Z"/>
+<path class="t0" d="M563.0,337.1 570.0,333.6 577.0,337.1 570.0,340.6Z"/></g>
 <g class="tile" style="animation-delay:0.410s"><path d="M556.0,350.0 563.0,353.5 556.0,357.0 549.0,353.5Z"/></g>
 <g class="tile" style="animation-delay:0.422s"><path d="M647.0,353.5 654.0,357.0 647.0,360.5 640.0,357.0Z"/></g>
 <g class="tile" style="animation-delay:0.422s"><path d="M633.0,353.5 640.0,357.0 633.0,360.5 626.0,357.0Z"/></g>
-<g class="tw" style="animation-delay:0.422s"><path class="r0" d="M626.0,343.4 619.0,346.9 619.0,360.5 626.0,357.0Z"/><path class="l0" d="M612.0,343.4 619.0,346.9 619.0,360.5 612.0,357.0Z"/>
-<path class="t0" d="M612.0,343.4 619.0,339.9 626.0,343.4 619.0,346.9Z"/></g>
-<g class="tw" style="animation-delay:0.422s"><path class="r1" d="M612.0,323.7 605.0,327.2 605.0,360.5 612.0,357.0Z"/><path class="l1" d="M598.0,323.7 605.0,327.2 605.0,360.5 598.0,357.0Z"/>
-<path class="win" d="M599.8,333.3 601.5,334.3 599.8,335.3 598.0,334.3Z"/>
-<path class="win" d="M603.2,335.0 605.0,336.0 603.2,337.0 601.5,336.0Z"/>
-<path class="win" d="M599.8,347.2 601.5,348.2 599.8,349.2 598.0,348.2Z"/>
-<path class="win" d="M603.2,348.9 605.0,349.9 603.2,350.9 601.5,349.9Z"/>
-<path class="win" d="M610.2,333.3 612.0,334.3 610.2,335.3 608.5,334.3Z"/>
-<path class="win" d="M606.8,335.0 608.5,336.0 606.8,337.0 605.0,336.0Z"/>
-<path class="win" d="M610.2,347.2 612.0,348.2 610.2,349.2 608.5,348.2Z"/>
-<path class="win" d="M606.8,348.9 608.5,349.9 606.8,350.9 605.0,349.9Z"/>
-<path class="t1" d="M598.0,323.7 605.0,320.2 612.0,323.7 605.0,327.2Z"/></g>
+<g class="tile" style="animation-delay:0.422s"><path d="M619.0,353.5 626.0,357.0 619.0,360.5 612.0,357.0Z"/></g>
+<g class="tile" style="animation-delay:0.422s"><path d="M605.0,353.5 612.0,357.0 605.0,360.5 598.0,357.0Z"/></g>
 <g class="tile" style="animation-delay:0.422s"><path d="M591.0,353.5 598.0,357.0 591.0,360.5 584.0,357.0Z"/></g>
-<g class="tw" style="animation-delay:0.422s"><path class="r0" d="M584.0,340.6 577.0,344.1 577.0,360.5 584.0,357.0Z"/><path class="l0" d="M570.0,340.6 577.0,344.1 577.0,360.5 570.0,357.0Z"/>
-<path class="t0" d="M570.0,340.6 577.0,337.1 584.0,340.6 577.0,344.1Z"/></g>
-<g class="tile" style="animation-delay:0.422s"><path d="M563.0,353.5 570.0,357.0 563.0,360.5 556.0,357.0Z"/></g>
+<g class="tw" style="animation-delay:0.422s"><path class="r1" d="M584.0,323.7 577.0,327.2 577.0,360.5 584.0,357.0Z"/><path class="l1" d="M570.0,323.7 577.0,327.2 577.0,360.5 570.0,357.0Z"/>
+<path class="win" d="M571.8,333.3 573.5,334.3 571.8,335.3 570.0,334.3Z"/>
+<path class="win" d="M575.2,335.0 577.0,336.0 575.2,337.0 573.5,336.0Z"/>
+<path class="win" d="M571.8,347.2 573.5,348.2 571.8,349.2 570.0,348.2Z"/>
+<path class="win" d="M575.2,348.9 577.0,349.9 575.2,350.9 573.5,349.9Z"/>
+<path class="win" d="M582.2,333.3 584.0,334.3 582.2,335.3 580.5,334.3Z"/>
+<path class="win" d="M578.8,335.0 580.5,336.0 578.8,337.0 577.0,336.0Z"/>
+<path class="win" d="M582.2,347.2 584.0,348.2 582.2,349.2 580.5,348.2Z"/>
+<path class="win" d="M578.8,348.9 580.5,349.9 578.8,350.9 577.0,349.9Z"/>
+<path class="t1" d="M570.0,323.7 577.0,320.2 584.0,323.7 577.0,327.2Z"/></g>
+<g class="tw" style="animation-delay:0.422s"><path class="r0" d="M570.0,343.4 563.0,346.9 563.0,360.5 570.0,357.0Z"/><path class="l0" d="M556.0,343.4 563.0,346.9 563.0,360.5 556.0,357.0Z"/>
+<path class="t0" d="M556.0,343.4 563.0,339.9 570.0,343.4 563.0,346.9Z"/></g>
 <g class="tile" style="animation-delay:0.434s"><path d="M654.0,357.0 661.0,360.5 654.0,364.0 647.0,360.5Z"/></g>
 <g class="tile" style="animation-delay:0.434s"><path d="M640.0,357.0 647.0,360.5 640.0,364.0 633.0,360.5Z"/></g>
 <g class="tile" style="animation-delay:0.434s"><path d="M626.0,357.0 633.0,360.5 626.0,364.0 619.0,360.5Z"/></g>
 <g class="tile" style="animation-delay:0.434s"><path d="M612.0,357.0 619.0,360.5 612.0,364.0 605.0,360.5Z"/></g>
 <g class="tile" style="animation-delay:0.434s"><path d="M598.0,357.0 605.0,360.5 598.0,364.0 591.0,360.5Z"/></g>
-<g class="tw" style="animation-delay:0.434s"><path class="r1" d="M591.0,327.2 584.0,330.7 584.0,364.0 591.0,360.5Z"/><path class="l1" d="M577.0,327.2 584.0,330.7 584.0,364.0 577.0,360.5Z"/>
-<path class="win" d="M578.8,336.8 580.5,337.8 578.8,338.8 577.0,337.8Z"/>
-<path class="win" d="M582.2,338.5 584.0,339.5 582.2,340.5 580.5,339.5Z"/>
-<path class="win" d="M578.8,350.7 580.5,351.7 578.8,352.7 577.0,351.7Z"/>
-<path class="win" d="M582.2,352.4 584.0,353.4 582.2,354.4 580.5,353.4Z"/>
-<path class="win" d="M589.2,336.8 591.0,337.8 589.2,338.8 587.5,337.8Z"/>
-<path class="win" d="M585.8,338.5 587.5,339.5 585.8,340.5 584.0,339.5Z"/>
-<path class="win" d="M589.2,350.7 591.0,351.7 589.2,352.7 587.5,351.7Z"/>
-<path class="win" d="M585.8,352.4 587.5,353.4 585.8,354.4 584.0,353.4Z"/>
-<path class="t1" d="M577.0,327.2 584.0,323.7 591.0,327.2 584.0,330.7Z"/></g>
-<g class="tw" style="animation-delay:0.434s"><path class="r0" d="M577.0,346.9 570.0,350.4 570.0,364.0 577.0,360.5Z"/><path class="l0" d="M563.0,346.9 570.0,350.4 570.0,364.0 563.0,360.5Z"/>
-<path class="t0" d="M563.0,346.9 570.0,343.4 577.0,346.9 570.0,350.4Z"/></g>
+<g class="tile" style="animation-delay:0.434s"><path d="M584.0,357.0 591.0,360.5 584.0,364.0 577.0,360.5Z"/></g>
+<g class="tile" style="animation-delay:0.434s"><path d="M570.0,357.0 577.0,360.5 570.0,364.0 563.0,360.5Z"/></g>
 <g class="tile" style="animation-delay:0.446s"><path d="M661.0,360.5 668.0,364.0 661.0,367.5 654.0,364.0Z"/></g>
 <g class="tile" style="animation-delay:0.446s"><path d="M647.0,360.5 654.0,364.0 647.0,367.5 640.0,364.0Z"/></g>
 <g class="tile" style="animation-delay:0.446s"><path d="M633.0,360.5 640.0,364.0 633.0,367.5 626.0,364.0Z"/></g>
@@ -309,81 +309,83 @@
 <g class="tile" style="animation-delay:0.446s"><path d="M605.0,360.5 612.0,364.0 605.0,367.5 598.0,364.0Z"/></g>
 <g class="tile" style="animation-delay:0.446s"><path d="M591.0,360.5 598.0,364.0 591.0,367.5 584.0,364.0Z"/></g>
 <g class="tile" style="animation-delay:0.446s"><path d="M577.0,360.5 584.0,364.0 577.0,367.5 570.0,364.0Z"/></g>
-<g class="tile" style="animation-delay:0.458s"><path d="M668.0,364.0 675.0,367.5 668.0,371.0 661.0,367.5Z"/></g>
+<g class="tw" style="animation-delay:0.458s"><path class="r0" d="M675.0,356.7 668.0,360.2 668.0,371.0 675.0,367.5Z"/><path class="l0" d="M661.0,356.7 668.0,360.2 668.0,371.0 661.0,367.5Z"/>
+<path class="t0" d="M661.0,356.7 668.0,353.2 675.0,356.7 668.0,360.2Z"/></g>
 <g class="tile" style="animation-delay:0.458s"><path d="M654.0,364.0 661.0,367.5 654.0,371.0 647.0,367.5Z"/></g>
 <g class="tile" style="animation-delay:0.458s"><path d="M640.0,364.0 647.0,367.5 640.0,371.0 633.0,367.5Z"/></g>
 <g class="tile" style="animation-delay:0.458s"><path d="M626.0,364.0 633.0,367.5 626.0,371.0 619.0,367.5Z"/></g>
 <g class="tile" style="animation-delay:0.458s"><path d="M612.0,364.0 619.0,367.5 612.0,371.0 605.0,367.5Z"/></g>
-<g class="tile" style="animation-delay:0.458s"><path d="M598.0,364.0 605.0,367.5 598.0,371.0 591.0,367.5Z"/></g>
+<g class="tw" style="animation-delay:0.458s"><path class="r0" d="M605.0,356.7 598.0,360.2 598.0,371.0 605.0,367.5Z"/><path class="l0" d="M591.0,356.7 598.0,360.2 598.0,371.0 591.0,367.5Z"/>
+<path class="t0" d="M591.0,356.7 598.0,353.2 605.0,356.7 598.0,360.2Z"/></g>
 <g class="tile" style="animation-delay:0.458s"><path d="M584.0,364.0 591.0,367.5 584.0,371.0 577.0,367.5Z"/></g>
-<g class="tw" style="animation-delay:0.470s"><path class="r0" d="M682.0,360.2 675.0,363.7 675.0,374.5 682.0,371.0Z"/><path class="l0" d="M668.0,360.2 675.0,363.7 675.0,374.5 668.0,371.0Z"/>
-<path class="t0" d="M668.0,360.2 675.0,356.7 682.0,360.2 675.0,363.7Z"/></g>
-<g class="tile" style="animation-delay:0.470s"><path d="M661.0,367.5 668.0,371.0 661.0,374.5 654.0,371.0Z"/></g>
+<g class="tile" style="animation-delay:0.470s"><path d="M675.0,367.5 682.0,371.0 675.0,374.5 668.0,371.0Z"/></g>
+<g class="tw" style="animation-delay:0.470s"><path class="r0" d="M668.0,360.2 661.0,363.7 661.0,374.5 668.0,371.0Z"/><path class="l0" d="M654.0,360.2 661.0,363.7 661.0,374.5 654.0,371.0Z"/>
+<path class="t0" d="M654.0,360.2 661.0,356.7 668.0,360.2 661.0,363.7Z"/></g>
 <g class="tile" style="animation-delay:0.470s"><path d="M647.0,367.5 654.0,371.0 647.0,374.5 640.0,371.0Z"/></g>
 <g class="tile" style="animation-delay:0.470s"><path d="M633.0,367.5 640.0,371.0 633.0,374.5 626.0,371.0Z"/></g>
 <g class="tile" style="animation-delay:0.470s"><path d="M619.0,367.5 626.0,371.0 619.0,374.5 612.0,371.0Z"/></g>
-<g class="tw" style="animation-delay:0.470s"><path class="r0" d="M612.0,360.2 605.0,363.7 605.0,374.5 612.0,371.0Z"/><path class="l0" d="M598.0,360.2 605.0,363.7 605.0,374.5 598.0,371.0Z"/>
-<path class="t0" d="M598.0,360.2 605.0,356.7 612.0,360.2 605.0,363.7Z"/></g>
+<g class="tile" style="animation-delay:0.470s"><path d="M605.0,367.5 612.0,371.0 605.0,374.5 598.0,371.0Z"/></g>
 <g class="tile" style="animation-delay:0.470s"><path d="M591.0,367.5 598.0,371.0 591.0,374.5 584.0,371.0Z"/></g>
-<g class="tile" style="animation-delay:0.482s"><path d="M682.0,371.0 689.0,374.5 682.0,378.0 675.0,374.5Z"/></g>
-<g class="tw" style="animation-delay:0.482s"><path class="r0" d="M675.0,363.7 668.0,367.2 668.0,378.0 675.0,374.5Z"/><path class="l0" d="M661.0,363.7 668.0,367.2 668.0,378.0 661.0,374.5Z"/>
-<path class="t0" d="M661.0,363.7 668.0,360.2 675.0,363.7 668.0,367.2Z"/></g>
-<g class="tile" style="animation-delay:0.482s"><path d="M654.0,371.0 661.0,374.5 654.0,378.0 647.0,374.5Z"/></g>
+<g class="tw" style="animation-delay:0.482s"><path class="r0" d="M689.0,363.7 682.0,367.2 682.0,378.0 689.0,374.5Z"/><path class="l0" d="M675.0,363.7 682.0,367.2 682.0,378.0 675.0,374.5Z"/>
+<path class="t0" d="M675.0,363.7 682.0,360.2 689.0,363.7 682.0,367.2Z"/></g>
+<g class="tile" style="animation-delay:0.482s"><path d="M668.0,371.0 675.0,374.5 668.0,378.0 661.0,374.5Z"/></g>
+<g class="tw" style="animation-delay:0.482s"><path class="r0" d="M661.0,352.4 654.0,355.9 654.0,378.0 661.0,374.5Z"/><path class="l0" d="M647.0,352.4 654.0,355.9 654.0,378.0 647.0,374.5Z"/>
+<path class="t0" d="M647.0,352.4 654.0,348.9 661.0,352.4 654.0,355.9Z"/></g>
 <g class="tile" style="animation-delay:0.482s"><path d="M640.0,371.0 647.0,374.5 640.0,378.0 633.0,374.5Z"/></g>
 <g class="tile" style="animation-delay:0.482s"><path d="M626.0,371.0 633.0,374.5 626.0,378.0 619.0,374.5Z"/></g>
 <g class="tile" style="animation-delay:0.482s"><path d="M612.0,371.0 619.0,374.5 612.0,378.0 605.0,374.5Z"/></g>
 <g class="tile" style="animation-delay:0.482s"><path d="M598.0,371.0 605.0,374.5 598.0,378.0 591.0,374.5Z"/></g>
-<g class="tw" style="animation-delay:0.494s"><path class="r0" d="M696.0,367.2 689.0,370.7 689.0,381.5 696.0,378.0Z"/><path class="l0" d="M682.0,367.2 689.0,370.7 689.0,381.5 682.0,378.0Z"/>
-<path class="t0" d="M682.0,367.2 689.0,363.7 696.0,367.2 689.0,370.7Z"/></g>
+<g class="tile" style="animation-delay:0.494s"><path d="M689.0,374.5 696.0,378.0 689.0,381.5 682.0,378.0Z"/></g>
 <g class="tile" style="animation-delay:0.494s"><path d="M675.0,374.5 682.0,378.0 675.0,381.5 668.0,378.0Z"/></g>
-<g class="tw" style="animation-delay:0.494s"><path class="r0" d="M668.0,355.9 661.0,359.4 661.0,381.5 668.0,378.0Z"/><path class="l0" d="M654.0,355.9 661.0,359.4 661.0,381.5 654.0,378.0Z"/>
-<path class="t0" d="M654.0,355.9 661.0,352.4 668.0,355.9 661.0,359.4Z"/></g>
-<g class="tile" style="animation-delay:0.494s"><path d="M647.0,374.5 654.0,378.0 647.0,381.5 640.0,378.0Z"/></g>
+<g class="tile" style="animation-delay:0.494s"><path d="M661.0,374.5 668.0,378.0 661.0,381.5 654.0,378.0Z"/></g>
+<g class="tw" style="animation-delay:0.494s"><path class="r0" d="M654.0,358.7 647.0,362.2 647.0,381.5 654.0,378.0Z"/><path class="l0" d="M640.0,358.7 647.0,362.2 647.0,381.5 640.0,378.0Z"/>
+<path class="t0" d="M640.0,358.7 647.0,355.2 654.0,358.7 647.0,362.2Z"/></g>
 <g class="tile" style="animation-delay:0.494s"><path d="M633.0,374.5 640.0,378.0 633.0,381.5 626.0,378.0Z"/></g>
 <g class="tile" style="animation-delay:0.494s"><path d="M619.0,374.5 626.0,378.0 619.0,381.5 612.0,378.0Z"/></g>
 <g class="tile" style="animation-delay:0.494s"><path d="M605.0,374.5 612.0,378.0 605.0,381.5 598.0,378.0Z"/></g>
 <g class="tile" style="animation-delay:0.506s"><path d="M696.0,378.0 703.0,381.5 696.0,385.0 689.0,381.5Z"/></g>
 <g class="tile" style="animation-delay:0.506s"><path d="M682.0,378.0 689.0,381.5 682.0,385.0 675.0,381.5Z"/></g>
 <g class="tile" style="animation-delay:0.506s"><path d="M668.0,378.0 675.0,381.5 668.0,385.0 661.0,381.5Z"/></g>
-<g class="tw" style="animation-delay:0.506s"><path class="r0" d="M661.0,362.2 654.0,365.7 654.0,385.0 661.0,381.5Z"/><path class="l0" d="M647.0,362.2 654.0,365.7 654.0,385.0 647.0,381.5Z"/>
-<path class="t0" d="M647.0,362.2 654.0,358.7 661.0,362.2 654.0,365.7Z"/></g>
+<g class="tile" style="animation-delay:0.506s"><path d="M654.0,378.0 661.0,381.5 654.0,385.0 647.0,381.5Z"/></g>
 <g class="tile" style="animation-delay:0.506s"><path d="M640.0,378.0 647.0,381.5 640.0,385.0 633.0,381.5Z"/></g>
 <g class="tile" style="animation-delay:0.506s"><path d="M626.0,378.0 633.0,381.5 626.0,385.0 619.0,381.5Z"/></g>
 <g class="tile" style="animation-delay:0.506s"><path d="M612.0,378.0 619.0,381.5 612.0,385.0 605.0,381.5Z"/></g>
 <g class="tile" style="animation-delay:0.518s"><path d="M703.0,381.5 710.0,385.0 703.0,388.5 696.0,385.0Z"/></g>
 <g class="tile" style="animation-delay:0.518s"><path d="M689.0,381.5 696.0,385.0 689.0,388.5 682.0,385.0Z"/></g>
 <g class="tile" style="animation-delay:0.518s"><path d="M675.0,381.5 682.0,385.0 675.0,388.5 668.0,385.0Z"/></g>
-<g class="tile" style="animation-delay:0.518s"><path d="M661.0,381.5 668.0,385.0 661.0,388.5 654.0,385.0Z"/></g>
+<g class="tw" style="animation-delay:0.518s"><path class="r0" d="M668.0,374.2 661.0,377.7 661.0,388.5 668.0,385.0Z"/><path class="l0" d="M654.0,374.2 661.0,377.7 661.0,388.5 654.0,385.0Z"/>
+<path class="t0" d="M654.0,374.2 661.0,370.7 668.0,374.2 661.0,377.7Z"/></g>
 <g class="tile" style="animation-delay:0.518s"><path d="M647.0,381.5 654.0,385.0 647.0,388.5 640.0,385.0Z"/></g>
 <g class="tile" style="animation-delay:0.518s"><path d="M633.0,381.5 640.0,385.0 633.0,388.5 626.0,385.0Z"/></g>
 <g class="tile" style="animation-delay:0.518s"><path d="M619.0,381.5 626.0,385.0 619.0,388.5 612.0,385.0Z"/></g>
 <g class="tile" style="animation-delay:0.530s"><path d="M710.0,385.0 717.0,388.5 710.0,392.0 703.0,388.5Z"/></g>
 <g class="tile" style="animation-delay:0.530s"><path d="M696.0,385.0 703.0,388.5 696.0,392.0 689.0,388.5Z"/></g>
 <g class="tile" style="animation-delay:0.530s"><path d="M682.0,385.0 689.0,388.5 682.0,392.0 675.0,388.5Z"/></g>
-<g class="tw" style="animation-delay:0.530s"><path class="r0" d="M675.0,377.7 668.0,381.2 668.0,392.0 675.0,388.5Z"/><path class="l0" d="M661.0,377.7 668.0,381.2 668.0,392.0 661.0,388.5Z"/>
-<path class="t0" d="M661.0,377.7 668.0,374.2 675.0,377.7 668.0,381.2Z"/></g>
-<g class="tile" style="animation-delay:0.530s"><path d="M654.0,385.0 661.0,388.5 654.0,392.0 647.0,388.5Z"/></g>
+<g class="tile" style="animation-delay:0.530s"><path d="M668.0,385.0 675.0,388.5 668.0,392.0 661.0,388.5Z"/></g>
+<g class="tw" style="animation-delay:0.530s"><path class="r2" d="M661.0,349.5 654.0,353.0 654.0,392.0 661.0,388.5Z"/><path class="l2" d="M647.0,349.5 654.0,353.0 654.0,392.0 647.0,388.5Z"/>
+<path class="win" d="M648.8,360.8 650.5,361.8 648.8,362.8 647.0,361.8Z"/>
+<path class="win" d="M652.2,362.5 654.0,363.5 652.2,364.5 650.5,363.5Z"/>
+<path class="win" d="M648.8,377.0 650.5,378.0 648.8,379.0 647.0,378.0Z"/>
+<path class="win" d="M652.2,378.8 654.0,379.8 652.2,380.8 650.5,379.8Z"/>
+<path class="win" d="M659.2,360.8 661.0,361.8 659.2,362.8 657.5,361.8Z"/>
+<path class="win" d="M655.8,362.5 657.5,363.5 655.8,364.5 654.0,363.5Z"/>
+<path class="win" d="M659.2,377.0 661.0,378.0 659.2,379.0 657.5,378.0Z"/>
+<path class="win" d="M655.8,378.8 657.5,379.8 655.8,380.8 654.0,379.8Z"/>
+<path class="t2" d="M647.0,349.5 654.0,346.0 661.0,349.5 654.0,353.0Z"/></g>
 <g class="tile" style="animation-delay:0.530s"><path d="M640.0,385.0 647.0,388.5 640.0,392.0 633.0,388.5Z"/></g>
-<g class="tile" style="animation-delay:0.530s"><path d="M626.0,385.0 633.0,388.5 626.0,392.0 619.0,388.5Z"/></g>
+<g class="tw" style="animation-delay:0.530s"><path class="r0" d="M633.0,377.7 626.0,381.2 626.0,392.0 633.0,388.5Z"/><path class="l0" d="M619.0,377.7 626.0,381.2 626.0,392.0 619.0,388.5Z"/>
+<path class="t0" d="M619.0,377.7 626.0,374.2 633.0,377.7 626.0,381.2Z"/></g>
 <g class="tile" style="animation-delay:0.542s"><path d="M717.0,388.5 724.0,392.0 717.0,395.5 710.0,392.0Z"/></g>
 <g class="tile" style="animation-delay:0.542s"><path d="M703.0,388.5 710.0,392.0 703.0,395.5 696.0,392.0Z"/></g>
 <g class="tile" style="animation-delay:0.542s"><path d="M689.0,388.5 696.0,392.0 689.0,395.5 682.0,392.0Z"/></g>
 <g class="tile" style="animation-delay:0.542s"><path d="M675.0,388.5 682.0,392.0 675.0,395.5 668.0,392.0Z"/></g>
-<g class="tw" style="animation-delay:0.542s"><path class="r2" d="M668.0,353.0 661.0,356.5 661.0,395.5 668.0,392.0Z"/><path class="l2" d="M654.0,353.0 661.0,356.5 661.0,395.5 654.0,392.0Z"/>
-<path class="win" d="M655.8,364.3 657.5,365.3 655.8,366.3 654.0,365.3Z"/>
-<path class="win" d="M659.2,366.0 661.0,367.0 659.2,368.0 657.5,367.0Z"/>
-<path class="win" d="M655.8,380.5 657.5,381.5 655.8,382.5 654.0,381.5Z"/>
-<path class="win" d="M659.2,382.3 661.0,383.3 659.2,384.3 657.5,383.3Z"/>
-<path class="win" d="M666.2,364.3 668.0,365.3 666.2,366.3 664.5,365.3Z"/>
-<path class="win" d="M662.8,366.0 664.5,367.0 662.8,368.0 661.0,367.0Z"/>
-<path class="win" d="M666.2,380.5 668.0,381.5 666.2,382.5 664.5,381.5Z"/>
-<path class="win" d="M662.8,382.3 664.5,383.3 662.8,384.3 661.0,383.3Z"/>
-<path class="t2" d="M654.0,353.0 661.0,349.5 668.0,353.0 661.0,356.5Z"/></g>
+<g class="tile" style="animation-delay:0.542s"><path d="M661.0,388.5 668.0,392.0 661.0,395.5 654.0,392.0Z"/></g>
 <g class="tile" style="animation-delay:0.542s"><path d="M647.0,388.5 654.0,392.0 647.0,395.5 640.0,392.0Z"/></g>
 <g class="tw" style="animation-delay:0.542s"><path class="r0" d="M640.0,381.2 633.0,384.7 633.0,395.5 640.0,392.0Z"/><path class="l0" d="M626.0,381.2 633.0,384.7 633.0,395.5 626.0,392.0Z"/>
 <path class="t0" d="M626.0,381.2 633.0,377.7 640.0,381.2 633.0,384.7Z"/></g>
 <g class="tile" style="animation-delay:0.554s"><path d="M724.0,392.0 731.0,395.5 724.0,399.0 717.0,395.5Z"/></g>
-<g class="tile" style="animation-delay:0.554s"><path d="M710.0,392.0 717.0,395.5 710.0,399.0 703.0,395.5Z"/></g>
+<g class="tw" style="animation-delay:0.554s"><path class="r0" d="M717.0,379.1 710.0,382.6 710.0,399.0 717.0,395.5Z"/><path class="l0" d="M703.0,379.1 710.0,382.6 710.0,399.0 703.0,395.5Z"/>
+<path class="t0" d="M703.0,379.1 710.0,375.6 717.0,379.1 710.0,382.6Z"/></g>
 <g class="tile" style="animation-delay:0.554s"><path d="M696.0,392.0 703.0,395.5 696.0,399.0 689.0,395.5Z"/></g>
 <g class="tile" style="animation-delay:0.554s"><path d="M682.0,392.0 689.0,395.5 682.0,399.0 675.0,395.5Z"/></g>
 <g class="tile" style="animation-delay:0.554s"><path d="M668.0,392.0 675.0,395.5 668.0,399.0 661.0,395.5Z"/></g>
@@ -391,36 +393,34 @@
 <g class="tw" style="animation-delay:0.554s"><path class="r0" d="M647.0,384.7 640.0,388.2 640.0,399.0 647.0,395.5Z"/><path class="l0" d="M633.0,384.7 640.0,388.2 640.0,399.0 633.0,395.5Z"/>
 <path class="t0" d="M633.0,384.7 640.0,381.2 647.0,384.7 640.0,388.2Z"/></g>
 <g class="tile" style="animation-delay:0.566s"><path d="M731.0,395.5 738.0,399.0 731.0,402.5 724.0,399.0Z"/></g>
-<g class="tw" style="animation-delay:0.566s"><path class="r0" d="M724.0,382.6 717.0,386.1 717.0,402.5 724.0,399.0Z"/><path class="l0" d="M710.0,382.6 717.0,386.1 717.0,402.5 710.0,399.0Z"/>
-<path class="t0" d="M710.0,382.6 717.0,379.1 724.0,382.6 717.0,386.1Z"/></g>
-<g class="tile" style="animation-delay:0.566s"><path d="M703.0,395.5 710.0,399.0 703.0,402.5 696.0,399.0Z"/></g>
+<g class="tile" style="animation-delay:0.566s"><path d="M717.0,395.5 724.0,399.0 717.0,402.5 710.0,399.0Z"/></g>
+<g class="tw" style="animation-delay:0.566s"><path class="r0" d="M710.0,382.6 703.0,386.1 703.0,402.5 710.0,399.0Z"/><path class="l0" d="M696.0,382.6 703.0,386.1 703.0,402.5 696.0,399.0Z"/>
+<path class="t0" d="M696.0,382.6 703.0,379.1 710.0,382.6 703.0,386.1Z"/></g>
 <g class="tile" style="animation-delay:0.566s"><path d="M689.0,395.5 696.0,399.0 689.0,402.5 682.0,399.0Z"/></g>
 <g class="tile" style="animation-delay:0.566s"><path d="M675.0,395.5 682.0,399.0 675.0,402.5 668.0,399.0Z"/></g>
 <g class="tile" style="animation-delay:0.566s"><path d="M661.0,395.5 668.0,399.0 661.0,402.5 654.0,399.0Z"/></g>
-<g class="tw" style="animation-delay:0.566s"><path class="r0" d="M654.0,388.2 647.0,391.7 647.0,402.5 654.0,399.0Z"/><path class="l0" d="M640.0,388.2 647.0,391.7 647.0,402.5 640.0,399.0Z"/>
-<path class="t0" d="M640.0,388.2 647.0,384.7 654.0,388.2 647.0,391.7Z"/></g>
+<g class="tile" style="animation-delay:0.566s"><path d="M647.0,395.5 654.0,399.0 647.0,402.5 640.0,399.0Z"/></g>
 <g class="tile" style="animation-delay:0.578s"><path d="M738.0,399.0 745.0,402.5 738.0,406.0 731.0,402.5Z"/></g>
 <g class="tile" style="animation-delay:0.578s"><path d="M724.0,399.0 731.0,402.5 724.0,406.0 717.0,402.5Z"/></g>
-<g class="tw" style="animation-delay:0.578s"><path class="r0" d="M717.0,386.1 710.0,389.6 710.0,406.0 717.0,402.5Z"/><path class="l0" d="M703.0,386.1 710.0,389.6 710.0,406.0 703.0,402.5Z"/>
-<path class="t0" d="M703.0,386.1 710.0,382.6 717.0,386.1 710.0,389.6Z"/></g>
-<g class="tile" style="animation-delay:0.578s"><path d="M696.0,399.0 703.0,402.5 696.0,406.0 689.0,402.5Z"/></g>
+<g class="tile" style="animation-delay:0.578s"><path d="M710.0,399.0 717.0,402.5 710.0,406.0 703.0,402.5Z"/></g>
+<g class="tw" style="animation-delay:0.578s"><path class="r0" d="M703.0,380.4 696.0,383.9 696.0,406.0 703.0,402.5Z"/><path class="l0" d="M689.0,380.4 696.0,383.9 696.0,406.0 689.0,402.5Z"/>
+<path class="t0" d="M689.0,380.4 696.0,376.9 703.0,380.4 696.0,383.9Z"/></g>
 <g class="tile" style="animation-delay:0.578s"><path d="M682.0,399.0 689.0,402.5 682.0,406.0 675.0,402.5Z"/></g>
 <g class="tile" style="animation-delay:0.578s"><path d="M668.0,399.0 675.0,402.5 668.0,406.0 661.0,402.5Z"/></g>
 <g class="tile" style="animation-delay:0.578s"><path d="M654.0,399.0 661.0,402.5 654.0,406.0 647.0,402.5Z"/></g>
 <g class="tile" style="animation-delay:0.590s"><path d="M745.0,402.5 752.0,406.0 745.0,409.5 738.0,406.0Z"/></g>
 <g class="tile" style="animation-delay:0.590s"><path d="M731.0,402.5 738.0,406.0 731.0,409.5 724.0,406.0Z"/></g>
 <g class="tile" style="animation-delay:0.590s"><path d="M717.0,402.5 724.0,406.0 717.0,409.5 710.0,406.0Z"/></g>
-<g class="tw" style="animation-delay:0.590s"><path class="r0" d="M710.0,383.9 703.0,387.4 703.0,409.5 710.0,406.0Z"/><path class="l0" d="M696.0,383.9 703.0,387.4 703.0,409.5 696.0,406.0Z"/>
-<path class="t0" d="M696.0,383.9 703.0,380.4 710.0,383.9 703.0,387.4Z"/></g>
-<g class="tile" style="animation-delay:0.590s"><path d="M689.0,402.5 696.0,406.0 689.0,409.5 682.0,406.0Z"/></g>
+<g class="tile" style="animation-delay:0.590s"><path d="M703.0,402.5 710.0,406.0 703.0,409.5 696.0,406.0Z"/></g>
+<g class="tw" style="animation-delay:0.590s"><path class="r0" d="M696.0,389.6 689.0,393.1 689.0,409.5 696.0,406.0Z"/><path class="l0" d="M682.0,389.6 689.0,393.1 689.0,409.5 682.0,406.0Z"/>
+<path class="t0" d="M682.0,389.6 689.0,386.1 696.0,389.6 689.0,393.1Z"/></g>
 <g class="tile" style="animation-delay:0.590s"><path d="M675.0,402.5 682.0,406.0 675.0,409.5 668.0,406.0Z"/></g>
 <g class="tile" style="animation-delay:0.590s"><path d="M661.0,402.5 668.0,406.0 661.0,409.5 654.0,406.0Z"/></g>
 <g class="tile" style="animation-delay:0.602s"><path d="M752.0,406.0 759.0,409.5 752.0,413.0 745.0,409.5Z"/></g>
 <g class="tile" style="animation-delay:0.602s"><path d="M738.0,406.0 745.0,409.5 738.0,413.0 731.0,409.5Z"/></g>
 <g class="tile" style="animation-delay:0.602s"><path d="M724.0,406.0 731.0,409.5 724.0,413.0 717.0,409.5Z"/></g>
 <g class="tile" style="animation-delay:0.602s"><path d="M710.0,406.0 717.0,409.5 710.0,413.0 703.0,409.5Z"/></g>
-<g class="tw" style="animation-delay:0.602s"><path class="r0" d="M703.0,393.1 696.0,396.6 696.0,413.0 703.0,409.5Z"/><path class="l0" d="M689.0,393.1 696.0,396.6 696.0,413.0 689.0,409.5Z"/>
-<path class="t0" d="M689.0,393.1 696.0,389.6 703.0,393.1 696.0,396.6Z"/></g>
+<g class="tile" style="animation-delay:0.602s"><path d="M696.0,406.0 703.0,409.5 696.0,413.0 689.0,409.5Z"/></g>
 <g class="tile" style="animation-delay:0.602s"><path d="M682.0,406.0 689.0,409.5 682.0,413.0 675.0,409.5Z"/></g>
 <g class="tile" style="animation-delay:0.602s"><path d="M668.0,406.0 675.0,409.5 668.0,413.0 661.0,409.5Z"/></g>
 <g class="tile" style="animation-delay:0.614s"><path d="M759.0,409.5 766.0,413.0 759.0,416.5 752.0,413.0Z"/></g>
@@ -431,122 +431,136 @@
 <g class="tile" style="animation-delay:0.614s"><path d="M689.0,409.5 696.0,413.0 689.0,416.5 682.0,413.0Z"/></g>
 <g class="tile" style="animation-delay:0.614s"><path d="M675.0,409.5 682.0,413.0 675.0,416.5 668.0,413.0Z"/></g>
 <g class="tile" style="animation-delay:0.626s"><path d="M766.0,413.0 773.0,416.5 766.0,420.0 759.0,416.5Z"/></g>
-<g class="tile" style="animation-delay:0.626s"><path d="M752.0,413.0 759.0,416.5 752.0,420.0 745.0,416.5Z"/></g>
+<g class="tw" style="animation-delay:0.626s"><path class="r0" d="M759.0,402.9 752.0,406.4 752.0,420.0 759.0,416.5Z"/><path class="l0" d="M745.0,402.9 752.0,406.4 752.0,420.0 745.0,416.5Z"/>
+<path class="t0" d="M745.0,402.9 752.0,399.4 759.0,402.9 752.0,406.4Z"/></g>
 <g class="tile" style="animation-delay:0.626s"><path d="M738.0,413.0 745.0,416.5 738.0,420.0 731.0,416.5Z"/></g>
 <g class="tile" style="animation-delay:0.626s"><path d="M724.0,413.0 731.0,416.5 724.0,420.0 717.0,416.5Z"/></g>
 <g class="tile" style="animation-delay:0.626s"><path d="M710.0,413.0 717.0,416.5 710.0,420.0 703.0,416.5Z"/></g>
 <g class="tile" style="animation-delay:0.626s"><path d="M696.0,413.0 703.0,416.5 696.0,420.0 689.0,416.5Z"/></g>
 <g class="tile" style="animation-delay:0.626s"><path d="M682.0,413.0 689.0,416.5 682.0,420.0 675.0,416.5Z"/></g>
 <g class="tile" style="animation-delay:0.638s"><path d="M773.0,416.5 780.0,420.0 773.0,423.5 766.0,420.0Z"/></g>
-<g class="tw" style="animation-delay:0.638s"><path class="r0" d="M766.0,406.4 759.0,409.9 759.0,423.5 766.0,420.0Z"/><path class="l0" d="M752.0,406.4 759.0,409.9 759.0,423.5 752.0,420.0Z"/>
-<path class="t0" d="M752.0,406.4 759.0,402.9 766.0,406.4 759.0,409.9Z"/></g>
+<g class="tile" style="animation-delay:0.638s"><path d="M759.0,416.5 766.0,420.0 759.0,423.5 752.0,420.0Z"/></g>
 <g class="tile" style="animation-delay:0.638s"><path d="M745.0,416.5 752.0,420.0 745.0,423.5 738.0,420.0Z"/></g>
 <g class="tile" style="animation-delay:0.638s"><path d="M731.0,416.5 738.0,420.0 731.0,423.5 724.0,420.0Z"/></g>
 <g class="tile" style="animation-delay:0.638s"><path d="M717.0,416.5 724.0,420.0 717.0,423.5 710.0,420.0Z"/></g>
-<g class="tile" style="animation-delay:0.638s"><path d="M703.0,416.5 710.0,420.0 703.0,423.5 696.0,420.0Z"/></g>
+<g class="tw" style="animation-delay:0.638s"><path class="r0" d="M710.0,409.2 703.0,412.7 703.0,423.5 710.0,420.0Z"/><path class="l0" d="M696.0,409.2 703.0,412.7 703.0,423.5 696.0,420.0Z"/>
+<path class="t0" d="M696.0,409.2 703.0,405.7 710.0,409.2 703.0,412.7Z"/></g>
 <g class="tile" style="animation-delay:0.638s"><path d="M689.0,416.5 696.0,420.0 689.0,423.5 682.0,420.0Z"/></g>
 <g class="tile" style="animation-delay:0.650s"><path d="M780.0,420.0 787.0,423.5 780.0,427.0 773.0,423.5Z"/></g>
 <g class="tile" style="animation-delay:0.650s"><path d="M766.0,420.0 773.0,423.5 766.0,427.0 759.0,423.5Z"/></g>
 <g class="tile" style="animation-delay:0.650s"><path d="M752.0,420.0 759.0,423.5 752.0,427.0 745.0,423.5Z"/></g>
 <g class="tile" style="animation-delay:0.650s"><path d="M738.0,420.0 745.0,423.5 738.0,427.0 731.0,423.5Z"/></g>
 <g class="tile" style="animation-delay:0.650s"><path d="M724.0,420.0 731.0,423.5 724.0,427.0 717.0,423.5Z"/></g>
-<g class="tw" style="animation-delay:0.650s"><path class="r0" d="M717.0,412.7 710.0,416.2 710.0,427.0 717.0,423.5Z"/><path class="l0" d="M703.0,412.7 710.0,416.2 710.0,427.0 703.0,423.5Z"/>
-<path class="t0" d="M703.0,412.7 710.0,409.2 717.0,412.7 710.0,416.2Z"/></g>
+<g class="tile" style="animation-delay:0.650s"><path d="M710.0,420.0 717.0,423.5 710.0,427.0 703.0,423.5Z"/></g>
 <g class="tile" style="animation-delay:0.650s"><path d="M696.0,420.0 703.0,423.5 696.0,427.0 689.0,423.5Z"/></g>
-<g class="tile" style="animation-delay:0.662s"><path d="M787.0,423.5 794.0,427.0 787.0,430.5 780.0,427.0Z"/></g>
-<g class="tile" style="animation-delay:0.662s"><path d="M773.0,423.5 780.0,427.0 773.0,430.5 766.0,427.0Z"/></g>
+<g class="tw" style="animation-delay:0.662s"><path class="r2" d="M794.0,385.2 787.0,388.7 787.0,430.5 794.0,427.0Z"/><path class="l2" d="M780.0,385.2 787.0,388.7 787.0,430.5 780.0,427.0Z"/>
+<path class="win" d="M781.8,397.3 783.5,398.3 781.8,399.3 780.0,398.3Z"/>
+<path class="win" d="M785.2,399.0 787.0,400.0 785.2,401.0 783.5,400.0Z"/>
+<path class="win" d="M781.8,414.7 783.5,415.7 781.8,416.7 780.0,415.7Z"/>
+<path class="win" d="M785.2,416.4 787.0,417.4 785.2,418.4 783.5,417.4Z"/>
+<path class="win" d="M792.2,397.3 794.0,398.3 792.2,399.3 790.5,398.3Z"/>
+<path class="win" d="M788.8,399.0 790.5,400.0 788.8,401.0 787.0,400.0Z"/>
+<path class="win" d="M792.2,414.7 794.0,415.7 792.2,416.7 790.5,415.7Z"/>
+<path class="win" d="M788.8,416.4 790.5,417.4 788.8,418.4 787.0,417.4Z"/>
+<path class="t2" d="M780.0,385.2 787.0,381.7 794.0,385.2 787.0,388.7Z"/></g>
+<g class="tw" style="animation-delay:0.662s"><path class="r4" d="M780.0,343.0 773.0,346.5 773.0,430.5 780.0,427.0Z"/><path class="l4" d="M766.0,343.0 773.0,346.5 773.0,430.5 766.0,427.0Z"/>
+<path class="win" d="M767.8,356.2 769.5,357.2 767.8,358.2 766.0,357.2Z"/>
+<path class="win" d="M771.2,358.0 773.0,359.0 771.2,360.0 769.5,359.0Z"/>
+<path class="win" d="M767.8,375.3 769.5,376.3 767.8,377.3 766.0,376.3Z"/>
+<path class="win" d="M771.2,377.1 773.0,378.1 771.2,379.1 769.5,378.1Z"/>
+<path class="win" d="M767.8,394.4 769.5,395.4 767.8,396.4 766.0,395.4Z"/>
+<path class="win" d="M771.2,396.2 773.0,397.2 771.2,398.2 769.5,397.2Z"/>
+<path class="win" d="M767.8,413.5 769.5,414.5 767.8,415.5 766.0,414.5Z"/>
+<path class="win" d="M771.2,415.3 773.0,416.3 771.2,417.3 769.5,416.3Z"/>
+<path class="win" d="M778.2,356.2 780.0,357.2 778.2,358.2 776.5,357.2Z"/>
+<path class="win" d="M774.8,358.0 776.5,359.0 774.8,360.0 773.0,359.0Z"/>
+<path class="win" d="M778.2,375.3 780.0,376.3 778.2,377.3 776.5,376.3Z"/>
+<path class="win" d="M774.8,377.1 776.5,378.1 774.8,379.1 773.0,378.1Z"/>
+<path class="win" d="M778.2,394.4 780.0,395.4 778.2,396.4 776.5,395.4Z"/>
+<path class="win" d="M774.8,396.2 776.5,397.2 774.8,398.2 773.0,397.2Z"/>
+<path class="win" d="M778.2,413.5 780.0,414.5 778.2,415.5 776.5,414.5Z"/>
+<path class="win" d="M774.8,415.3 776.5,416.3 774.8,417.3 773.0,416.3Z"/>
+<path class="t4" d="M766.0,343.0 773.0,339.5 780.0,343.0 773.0,346.5Z"/></g>
 <g class="tile" style="animation-delay:0.662s"><path d="M759.0,423.5 766.0,427.0 759.0,430.5 752.0,427.0Z"/></g>
 <g class="tile" style="animation-delay:0.662s"><path d="M745.0,423.5 752.0,427.0 745.0,430.5 738.0,427.0Z"/></g>
 <g class="tile" style="animation-delay:0.662s"><path d="M731.0,423.5 738.0,427.0 731.0,430.5 724.0,427.0Z"/></g>
 <g class="tile" style="animation-delay:0.662s"><path d="M717.0,423.5 724.0,427.0 717.0,430.5 710.0,427.0Z"/></g>
 <g class="tile" style="animation-delay:0.662s"><path d="M703.0,423.5 710.0,427.0 703.0,430.5 696.0,427.0Z"/></g>
-<g class="tw" style="animation-delay:0.674s"><path class="r2" d="M801.0,388.7 794.0,392.2 794.0,434.0 801.0,430.5Z"/><path class="l2" d="M787.0,388.7 794.0,392.2 794.0,434.0 787.0,430.5Z"/>
-<path class="win" d="M788.8,400.8 790.5,401.8 788.8,402.8 787.0,401.8Z"/>
-<path class="win" d="M792.2,402.5 794.0,403.5 792.2,404.5 790.5,403.5Z"/>
-<path class="win" d="M788.8,418.2 790.5,419.2 788.8,420.2 787.0,419.2Z"/>
-<path class="win" d="M792.2,419.9 794.0,420.9 792.2,421.9 790.5,420.9Z"/>
-<path class="win" d="M799.2,400.8 801.0,401.8 799.2,402.8 797.5,401.8Z"/>
-<path class="win" d="M795.8,402.5 797.5,403.5 795.8,404.5 794.0,403.5Z"/>
-<path class="win" d="M799.2,418.2 801.0,419.2 799.2,420.2 797.5,419.2Z"/>
-<path class="win" d="M795.8,419.9 797.5,420.9 795.8,421.9 794.0,420.9Z"/>
-<path class="t2" d="M787.0,388.7 794.0,385.2 801.0,388.7 794.0,392.2Z"/></g>
-<g class="tw" style="animation-delay:0.674s"><path class="r4" d="M787.0,346.5 780.0,350.0 780.0,434.0 787.0,430.5Z"/><path class="l4" d="M773.0,346.5 780.0,350.0 780.0,434.0 773.0,430.5Z"/>
-<path class="win" d="M774.8,359.7 776.5,360.7 774.8,361.7 773.0,360.7Z"/>
-<path class="win" d="M778.2,361.5 780.0,362.5 778.2,363.5 776.5,362.5Z"/>
-<path class="win" d="M774.8,378.8 776.5,379.8 774.8,380.8 773.0,379.8Z"/>
-<path class="win" d="M778.2,380.6 780.0,381.6 778.2,382.6 776.5,381.6Z"/>
-<path class="win" d="M774.8,397.9 776.5,398.9 774.8,399.9 773.0,398.9Z"/>
-<path class="win" d="M778.2,399.7 780.0,400.7 778.2,401.7 776.5,400.7Z"/>
-<path class="win" d="M774.8,417.0 776.5,418.0 774.8,419.0 773.0,418.0Z"/>
-<path class="win" d="M778.2,418.8 780.0,419.8 778.2,420.8 776.5,419.8Z"/>
-<path class="win" d="M785.2,359.7 787.0,360.7 785.2,361.7 783.5,360.7Z"/>
-<path class="win" d="M781.8,361.5 783.5,362.5 781.8,363.5 780.0,362.5Z"/>
-<path class="win" d="M785.2,378.8 787.0,379.8 785.2,380.8 783.5,379.8Z"/>
-<path class="win" d="M781.8,380.6 783.5,381.6 781.8,382.6 780.0,381.6Z"/>
-<path class="win" d="M785.2,397.9 787.0,398.9 785.2,399.9 783.5,398.9Z"/>
-<path class="win" d="M781.8,399.7 783.5,400.7 781.8,401.7 780.0,400.7Z"/>
-<path class="win" d="M785.2,417.0 787.0,418.0 785.2,419.0 783.5,418.0Z"/>
-<path class="win" d="M781.8,418.8 783.5,419.8 781.8,420.8 780.0,419.8Z"/>
-<path class="t4" d="M773.0,346.5 780.0,343.0 787.0,346.5 780.0,350.0Z"/></g>
-<g class="tile" style="animation-delay:0.674s"><path d="M766.0,427.0 773.0,430.5 766.0,434.0 759.0,430.5Z"/></g>
+<g class="tw" style="animation-delay:0.674s"><path class="r1" d="M801.0,394.4 794.0,397.9 794.0,434.0 801.0,430.5Z"/><path class="l1" d="M787.0,394.4 794.0,397.9 794.0,434.0 787.0,430.5Z"/>
+<path class="win" d="M788.8,404.8 790.5,405.8 788.8,406.8 787.0,405.8Z"/>
+<path class="win" d="M792.2,406.5 794.0,407.5 792.2,408.5 790.5,407.5Z"/>
+<path class="win" d="M788.8,419.8 790.5,420.8 788.8,421.8 787.0,420.8Z"/>
+<path class="win" d="M792.2,421.6 794.0,422.6 792.2,423.6 790.5,422.6Z"/>
+<path class="win" d="M799.2,404.8 801.0,405.8 799.2,406.8 797.5,405.8Z"/>
+<path class="win" d="M795.8,406.5 797.5,407.5 795.8,408.5 794.0,407.5Z"/>
+<path class="win" d="M799.2,419.8 801.0,420.8 799.2,421.8 797.5,420.8Z"/>
+<path class="win" d="M795.8,421.6 797.5,422.6 795.8,423.6 794.0,422.6Z"/>
+<path class="t1" d="M787.0,394.4 794.0,390.9 801.0,394.4 794.0,397.9Z"/></g>
+<g class="tw" style="animation-delay:0.674s"><path class="r1" d="M787.0,402.8 780.0,406.3 780.0,434.0 787.0,430.5Z"/><path class="l1" d="M773.0,402.8 780.0,406.3 780.0,434.0 773.0,430.5Z"/>
+<path class="win" d="M774.8,416.5 776.5,417.5 774.8,418.5 773.0,417.5Z"/>
+<path class="win" d="M778.2,418.3 780.0,419.3 778.2,420.3 776.5,419.3Z"/>
+<path class="win" d="M785.2,416.5 787.0,417.5 785.2,418.5 783.5,417.5Z"/>
+<path class="win" d="M781.8,418.3 783.5,419.3 781.8,420.3 780.0,419.3Z"/>
+<path class="t1" d="M773.0,402.8 780.0,399.3 787.0,402.8 780.0,406.3Z"/></g>
+<g class="tw" style="animation-delay:0.674s"><path class="r1" d="M773.0,394.4 766.0,397.9 766.0,434.0 773.0,430.5Z"/><path class="l1" d="M759.0,394.4 766.0,397.9 766.0,434.0 759.0,430.5Z"/>
+<path class="win" d="M760.8,404.8 762.5,405.8 760.8,406.8 759.0,405.8Z"/>
+<path class="win" d="M764.2,406.5 766.0,407.5 764.2,408.5 762.5,407.5Z"/>
+<path class="win" d="M760.8,419.8 762.5,420.8 760.8,421.8 759.0,420.8Z"/>
+<path class="win" d="M764.2,421.6 766.0,422.6 764.2,423.6 762.5,422.6Z"/>
+<path class="win" d="M771.2,404.8 773.0,405.8 771.2,406.8 769.5,405.8Z"/>
+<path class="win" d="M767.8,406.5 769.5,407.5 767.8,408.5 766.0,407.5Z"/>
+<path class="win" d="M771.2,419.8 773.0,420.8 771.2,421.8 769.5,420.8Z"/>
+<path class="win" d="M767.8,421.6 769.5,422.6 767.8,423.6 766.0,422.6Z"/>
+<path class="t1" d="M759.0,394.4 766.0,390.9 773.0,394.4 766.0,397.9Z"/></g>
 <g class="tile" style="animation-delay:0.674s"><path d="M752.0,427.0 759.0,430.5 752.0,434.0 745.0,430.5Z"/></g>
 <g class="tile" style="animation-delay:0.674s"><path d="M738.0,427.0 745.0,430.5 738.0,434.0 731.0,430.5Z"/></g>
 <g class="tile" style="animation-delay:0.674s"><path d="M724.0,427.0 731.0,430.5 724.0,434.0 717.0,430.5Z"/></g>
 <g class="tile" style="animation-delay:0.674s"><path d="M710.0,427.0 717.0,430.5 710.0,434.0 703.0,430.5Z"/></g>
-<g class="tw" style="animation-delay:0.686s"><path class="r1" d="M794.0,406.3 787.0,409.8 787.0,437.5 794.0,434.0Z"/><path class="l1" d="M780.0,406.3 787.0,409.8 787.0,437.5 780.0,434.0Z"/>
-<path class="win" d="M781.8,420.0 783.5,421.0 781.8,422.0 780.0,421.0Z"/>
-<path class="win" d="M785.2,421.8 787.0,422.8 785.2,423.8 783.5,422.8Z"/>
-<path class="win" d="M792.2,420.0 794.0,421.0 792.2,422.0 790.5,421.0Z"/>
-<path class="win" d="M788.8,421.8 790.5,422.8 788.8,423.8 787.0,422.8Z"/>
-<path class="t1" d="M780.0,406.3 787.0,402.8 794.0,406.3 787.0,409.8Z"/></g>
-<g class="tw" style="animation-delay:0.686s"><path class="r1" d="M780.0,397.9 773.0,401.4 773.0,437.5 780.0,434.0Z"/><path class="l1" d="M766.0,397.9 773.0,401.4 773.0,437.5 766.0,434.0Z"/>
-<path class="win" d="M767.8,408.3 769.5,409.3 767.8,410.3 766.0,409.3Z"/>
-<path class="win" d="M771.2,410.0 773.0,411.0 771.2,412.0 769.5,411.0Z"/>
-<path class="win" d="M767.8,423.3 769.5,424.3 767.8,425.3 766.0,424.3Z"/>
-<path class="win" d="M771.2,425.1 773.0,426.1 771.2,427.1 769.5,426.1Z"/>
-<path class="win" d="M778.2,408.3 780.0,409.3 778.2,410.3 776.5,409.3Z"/>
-<path class="win" d="M774.8,410.0 776.5,411.0 774.8,412.0 773.0,411.0Z"/>
-<path class="win" d="M778.2,423.3 780.0,424.3 778.2,425.3 776.5,424.3Z"/>
-<path class="win" d="M774.8,425.1 776.5,426.1 774.8,427.1 773.0,426.1Z"/>
-<path class="t1" d="M766.0,397.9 773.0,394.4 780.0,397.9 773.0,401.4Z"/></g>
-<g class="tile" style="animation-delay:0.686s"><path d="M759.0,430.5 766.0,434.0 759.0,437.5 752.0,434.0Z"/></g>
+<g class="tw" style="animation-delay:0.686s"><path class="r2" d="M780.0,383.8 773.0,387.3 773.0,437.5 780.0,434.0Z"/><path class="l2" d="M766.0,383.8 773.0,387.3 773.0,437.5 766.0,434.0Z"/>
+<path class="win" d="M767.8,394.0 769.5,395.0 767.8,396.0 766.0,395.0Z"/>
+<path class="win" d="M771.2,395.7 773.0,396.7 771.2,397.7 769.5,396.7Z"/>
+<path class="win" d="M767.8,408.8 769.5,409.8 767.8,410.8 766.0,409.8Z"/>
+<path class="win" d="M771.2,410.5 773.0,411.5 771.2,412.5 769.5,411.5Z"/>
+<path class="win" d="M767.8,423.5 769.5,424.5 767.8,425.5 766.0,424.5Z"/>
+<path class="win" d="M771.2,425.3 773.0,426.3 771.2,427.3 769.5,426.3Z"/>
+<path class="win" d="M778.2,394.0 780.0,395.0 778.2,396.0 776.5,395.0Z"/>
+<path class="win" d="M774.8,395.7 776.5,396.7 774.8,397.7 773.0,396.7Z"/>
+<path class="win" d="M778.2,408.8 780.0,409.8 778.2,410.8 776.5,409.8Z"/>
+<path class="win" d="M774.8,410.5 776.5,411.5 774.8,412.5 773.0,411.5Z"/>
+<path class="win" d="M778.2,423.5 780.0,424.5 778.2,425.5 776.5,424.5Z"/>
+<path class="win" d="M774.8,425.3 776.5,426.3 774.8,427.3 773.0,426.3Z"/>
+<path class="t2" d="M766.0,383.8 773.0,380.3 780.0,383.8 773.0,387.3Z"/></g>
+<g class="tw" style="animation-delay:0.686s"><path class="r1" d="M766.0,400.7 759.0,404.2 759.0,437.5 766.0,434.0Z"/><path class="l1" d="M752.0,400.7 759.0,404.2 759.0,437.5 752.0,434.0Z"/>
+<path class="win" d="M753.8,410.3 755.5,411.3 753.8,412.3 752.0,411.3Z"/>
+<path class="win" d="M757.2,412.0 759.0,413.0 757.2,414.0 755.5,413.0Z"/>
+<path class="win" d="M753.8,424.2 755.5,425.2 753.8,426.2 752.0,425.2Z"/>
+<path class="win" d="M757.2,425.9 759.0,426.9 757.2,427.9 755.5,426.9Z"/>
+<path class="win" d="M764.2,410.3 766.0,411.3 764.2,412.3 762.5,411.3Z"/>
+<path class="win" d="M760.8,412.0 762.5,413.0 760.8,414.0 759.0,413.0Z"/>
+<path class="win" d="M764.2,424.2 766.0,425.2 764.2,426.2 762.5,425.2Z"/>
+<path class="win" d="M760.8,425.9 762.5,426.9 760.8,427.9 759.0,426.9Z"/>
+<path class="t1" d="M752.0,400.7 759.0,397.2 766.0,400.7 759.0,404.2Z"/></g>
 <g class="tile" style="animation-delay:0.686s"><path d="M745.0,430.5 752.0,434.0 745.0,437.5 738.0,434.0Z"/></g>
 <g class="tile" style="animation-delay:0.686s"><path d="M731.0,430.5 738.0,434.0 731.0,437.5 724.0,434.0Z"/></g>
 <g class="tile" style="animation-delay:0.686s"><path d="M717.0,430.5 724.0,434.0 717.0,437.5 710.0,434.0Z"/></g>
-<g class="tw" style="animation-delay:0.698s"><path class="r2" d="M787.0,387.3 780.0,390.8 780.0,441.0 787.0,437.5Z"/><path class="l2" d="M773.0,387.3 780.0,390.8 780.0,441.0 773.0,437.5Z"/>
-<path class="win" d="M774.8,397.5 776.5,398.5 774.8,399.5 773.0,398.5Z"/>
-<path class="win" d="M778.2,399.2 780.0,400.2 778.2,401.2 776.5,400.2Z"/>
-<path class="win" d="M774.8,412.3 776.5,413.3 774.8,414.3 773.0,413.3Z"/>
-<path class="win" d="M778.2,414.0 780.0,415.0 778.2,416.0 776.5,415.0Z"/>
-<path class="win" d="M774.8,427.0 776.5,428.0 774.8,429.0 773.0,428.0Z"/>
-<path class="win" d="M778.2,428.8 780.0,429.8 778.2,430.8 776.5,429.8Z"/>
-<path class="win" d="M785.2,397.5 787.0,398.5 785.2,399.5 783.5,398.5Z"/>
-<path class="win" d="M781.8,399.2 783.5,400.2 781.8,401.2 780.0,400.2Z"/>
-<path class="win" d="M785.2,412.3 787.0,413.3 785.2,414.3 783.5,413.3Z"/>
-<path class="win" d="M781.8,414.0 783.5,415.0 781.8,416.0 780.0,415.0Z"/>
-<path class="win" d="M785.2,427.0 787.0,428.0 785.2,429.0 783.5,428.0Z"/>
-<path class="win" d="M781.8,428.8 783.5,429.8 781.8,430.8 780.0,429.8Z"/>
-<path class="t2" d="M773.0,387.3 780.0,383.8 787.0,387.3 780.0,390.8Z"/></g>
-<g class="tw" style="animation-delay:0.698s"><path class="r1" d="M773.0,404.2 766.0,407.7 766.0,441.0 773.0,437.5Z"/><path class="l1" d="M759.0,404.2 766.0,407.7 766.0,441.0 759.0,437.5Z"/>
-<path class="win" d="M760.8,413.8 762.5,414.8 760.8,415.8 759.0,414.8Z"/>
-<path class="win" d="M764.2,415.5 766.0,416.5 764.2,417.5 762.5,416.5Z"/>
-<path class="win" d="M760.8,427.7 762.5,428.7 760.8,429.7 759.0,428.7Z"/>
-<path class="win" d="M764.2,429.4 766.0,430.4 764.2,431.4 762.5,430.4Z"/>
-<path class="win" d="M771.2,413.8 773.0,414.8 771.2,415.8 769.5,414.8Z"/>
-<path class="win" d="M767.8,415.5 769.5,416.5 767.8,417.5 766.0,416.5Z"/>
-<path class="win" d="M771.2,427.7 773.0,428.7 771.2,429.7 769.5,428.7Z"/>
-<path class="win" d="M767.8,429.4 769.5,430.4 767.8,431.4 766.0,430.4Z"/>
-<path class="t1" d="M759.0,404.2 766.0,400.7 773.0,404.2 766.0,407.7Z"/></g>
-<g class="tile" style="animation-delay:0.698s"><path d="M752.0,434.0 759.0,437.5 752.0,441.0 745.0,437.5Z"/></g>
+<g class="tw" style="animation-delay:0.698s"><path class="r0" d="M773.0,418.2 766.0,421.7 766.0,441.0 773.0,437.5Z"/><path class="l0" d="M759.0,418.2 766.0,421.7 766.0,441.0 759.0,437.5Z"/>
+<path class="t0" d="M759.0,418.2 766.0,414.7 773.0,418.2 766.0,421.7Z"/></g>
+<g class="tw" style="animation-delay:0.698s"><path class="r0" d="M759.0,421.1 752.0,424.6 752.0,441.0 759.0,437.5Z"/><path class="l0" d="M745.0,421.1 752.0,424.6 752.0,441.0 745.0,437.5Z"/>
+<path class="t0" d="M745.0,421.1 752.0,417.6 759.0,421.1 752.0,424.6Z"/></g>
 <g class="tile" style="animation-delay:0.698s"><path d="M738.0,434.0 745.0,437.5 738.0,441.0 731.0,437.5Z"/></g>
 <g class="tile" style="animation-delay:0.698s"><path d="M724.0,434.0 731.0,437.5 724.0,441.0 717.0,437.5Z"/></g>
-<g class="tw" style="animation-delay:0.710s"><path class="r0" d="M780.0,421.7 773.0,425.2 773.0,444.5 780.0,441.0Z"/><path class="l0" d="M766.0,421.7 773.0,425.2 773.0,444.5 766.0,441.0Z"/>
-<path class="t0" d="M766.0,421.7 773.0,418.2 780.0,421.7 773.0,425.2Z"/></g>
-<g class="tw" style="animation-delay:0.710s"><path class="r0" d="M766.0,424.6 759.0,428.1 759.0,444.5 766.0,441.0Z"/><path class="l0" d="M752.0,424.6 759.0,428.1 759.0,444.5 752.0,441.0Z"/>
-<path class="t0" d="M752.0,424.6 759.0,421.1 766.0,424.6 759.0,428.1Z"/></g>
-<g class="tile" style="animation-delay:0.710s"><path d="M745.0,437.5 752.0,441.0 745.0,444.5 738.0,441.0Z"/></g>
+<g class="tile" style="animation-delay:0.710s"><path d="M759.0,437.5 766.0,441.0 759.0,444.5 752.0,441.0Z"/></g>
+<g class="tw" style="animation-delay:0.710s"><path class="r1" d="M752.0,410.5 745.0,414.0 745.0,444.5 752.0,441.0Z"/><path class="l1" d="M738.0,410.5 745.0,414.0 745.0,444.5 738.0,441.0Z"/>
+<path class="win" d="M739.8,419.3 741.5,420.3 739.8,421.3 738.0,420.3Z"/>
+<path class="win" d="M743.2,421.0 745.0,422.0 743.2,423.0 741.5,422.0Z"/>
+<path class="win" d="M739.8,432.0 741.5,433.0 739.8,434.0 738.0,433.0Z"/>
+<path class="win" d="M743.2,433.7 745.0,434.7 743.2,435.7 741.5,434.7Z"/>
+<path class="win" d="M750.2,419.3 752.0,420.3 750.2,421.3 748.5,420.3Z"/>
+<path class="win" d="M746.8,421.0 748.5,422.0 746.8,423.0 745.0,422.0Z"/>
+<path class="win" d="M750.2,432.0 752.0,433.0 750.2,434.0 748.5,433.0Z"/>
+<path class="win" d="M746.8,433.7 748.5,434.7 746.8,435.7 745.0,434.7Z"/>
+<path class="t1" d="M738.0,410.5 745.0,407.0 752.0,410.5 745.0,414.0Z"/></g>
 <g class="tile" style="animation-delay:0.710s"><path d="M731.0,437.5 738.0,441.0 731.0,444.5 724.0,441.0Z"/></g>
-<g class="tile" style="animation-delay:0.722s"><path d="M766.0,441.0 773.0,444.5 766.0,448.0 759.0,444.5Z"/></g>
 <g class="tw" style="animation-delay:0.722s"><path class="r1" d="M759.0,414.0 752.0,417.5 752.0,448.0 759.0,444.5Z"/><path class="l1" d="M745.0,414.0 752.0,417.5 752.0,448.0 745.0,444.5Z"/>
 <path class="win" d="M746.8,422.8 748.5,423.8 746.8,424.8 745.0,423.8Z"/>
 <path class="win" d="M750.2,424.5 752.0,425.5 750.2,426.5 748.5,425.5Z"/>
@@ -557,15 +571,13 @@
 <path class="win" d="M757.2,435.5 759.0,436.5 757.2,437.5 755.5,436.5Z"/>
 <path class="win" d="M753.8,437.2 755.5,438.2 753.8,439.2 752.0,438.2Z"/>
 <path class="t1" d="M745.0,414.0 752.0,410.5 759.0,414.0 752.0,417.5Z"/></g>
-<g class="tile" style="animation-delay:0.722s"><path d="M738.0,441.0 745.0,444.5 738.0,448.0 731.0,444.5Z"/></g>
-<g class="tw" style="animation-delay:0.734s"><path class="r0" d="M766.0,425.9 759.0,429.4 759.0,451.5 766.0,448.0Z"/><path class="l0" d="M752.0,425.9 759.0,429.4 759.0,451.5 752.0,448.0Z"/>
-<path class="t0" d="M752.0,425.9 759.0,422.4 766.0,425.9 759.0,429.4Z"/></g>
-<g class="tw" style="animation-delay:0.734s"><path class="r1" d="M752.0,420.3 745.0,423.8 745.0,451.5 752.0,448.0Z"/><path class="l1" d="M738.0,420.3 745.0,423.8 745.0,451.5 738.0,448.0Z"/>
-<path class="win" d="M739.8,434.0 741.5,435.0 739.8,436.0 738.0,435.0Z"/>
-<path class="win" d="M743.2,435.8 745.0,436.8 743.2,437.8 741.5,436.8Z"/>
-<path class="win" d="M750.2,434.0 752.0,435.0 750.2,436.0 748.5,435.0Z"/>
-<path class="win" d="M746.8,435.8 748.5,436.8 746.8,437.8 745.0,436.8Z"/>
-<path class="t1" d="M738.0,420.3 745.0,416.8 752.0,420.3 745.0,423.8Z"/></g>
-<g class="tile" style="animation-delay:0.746s"><path d="M752.0,448.0 759.0,451.5 752.0,455.0 745.0,451.5Z"/></g>
-<g class="now" style="animation-delay:0.758s"><path d="M752.0,435.0 754.6,439.0 752.0,443.0 749.4,439.0Z"/></g>
+<g class="tw" style="animation-delay:0.722s"><path class="r1" d="M745.0,416.8 738.0,420.3 738.0,448.0 745.0,444.5Z"/><path class="l1" d="M731.0,416.8 738.0,420.3 738.0,448.0 731.0,444.5Z"/>
+<path class="win" d="M732.8,430.5 734.5,431.5 732.8,432.5 731.0,431.5Z"/>
+<path class="win" d="M736.2,432.3 738.0,433.3 736.2,434.3 734.5,433.3Z"/>
+<path class="win" d="M743.2,430.5 745.0,431.5 743.2,432.5 741.5,431.5Z"/>
+<path class="win" d="M739.8,432.3 741.5,433.3 739.8,434.3 738.0,433.3Z"/>
+<path class="t1" d="M731.0,416.8 738.0,413.3 745.0,416.8 738.0,420.3Z"/></g>
+<g class="tw" style="animation-delay:0.734s"><path class="r0" d="M752.0,434.4 745.0,437.9 745.0,451.5 752.0,448.0Z"/><path class="l0" d="M738.0,434.4 745.0,437.9 745.0,451.5 738.0,448.0Z"/>
+<path class="t0" d="M738.0,434.4 745.0,430.9 752.0,434.4 745.0,437.9Z"/></g>
+<g class="now" style="animation-delay:0.686s"><path d="M794.0,377.85185185185185 796.6,381.85185185185185 794.0,385.85185185185185 791.4,381.85185185185185Z"/></g>
 </svg>
