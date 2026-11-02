@@ -4,7 +4,7 @@
 <text x="28" y="42" font-size="9.5" class="dim">every day of the last 12 months, as a building</text>
 <line class="rule" x1="28" y1="52" x2="352" y2="52" stroke-width="1"/>
 <text x="28" y="72" font-size="9" class="dim">contributions</text>
-<text x="28" y="92" font-size="20" font-weight="bold" class="fg">220</text>
+<text x="28" y="92" font-size="20" font-weight="bold" class="fg">221</text>
 <text x="120" y="86" font-size="8.5" class="dim">last 12 months</text>
 <text x="28" y="116" font-size="9" class="dim">active days</text>
 <text x="28" y="136" font-size="20" font-weight="bold" class="fg">44</text>
@@ -486,16 +486,16 @@
 <g class="tile" style="animation-delay:0.662s"><path d="M731.0,423.5 738.0,427.0 731.0,430.5 724.0,427.0Z"/></g>
 <g class="tile" style="animation-delay:0.662s"><path d="M717.0,423.5 724.0,427.0 717.0,430.5 710.0,427.0Z"/></g>
 <g class="tile" style="animation-delay:0.662s"><path d="M703.0,423.5 710.0,427.0 703.0,430.5 696.0,427.0Z"/></g>
-<g class="tw" style="animation-delay:0.674s"><path class="r1" d="M801.0,394.4 794.0,397.9 794.0,434.0 801.0,430.5Z"/><path class="l1" d="M787.0,394.4 794.0,397.9 794.0,434.0 787.0,430.5Z"/>
-<path class="win" d="M788.8,404.8 790.5,405.8 788.8,406.8 787.0,405.8Z"/>
-<path class="win" d="M792.2,406.5 794.0,407.5 792.2,408.5 790.5,407.5Z"/>
-<path class="win" d="M788.8,419.8 790.5,420.8 788.8,421.8 787.0,420.8Z"/>
-<path class="win" d="M792.2,421.6 794.0,422.6 792.2,423.6 790.5,422.6Z"/>
-<path class="win" d="M799.2,404.8 801.0,405.8 799.2,406.8 797.5,405.8Z"/>
-<path class="win" d="M795.8,406.5 797.5,407.5 795.8,408.5 794.0,407.5Z"/>
-<path class="win" d="M799.2,419.8 801.0,420.8 799.2,421.8 797.5,420.8Z"/>
-<path class="win" d="M795.8,421.6 797.5,422.6 795.8,423.6 794.0,422.6Z"/>
-<path class="t1" d="M787.0,394.4 794.0,390.9 801.0,394.4 794.0,397.9Z"/></g>
+<g class="tw" style="animation-delay:0.674s"><path class="r2" d="M801.0,391.5 794.0,395.0 794.0,434.0 801.0,430.5Z"/><path class="l2" d="M787.0,391.5 794.0,395.0 794.0,434.0 787.0,430.5Z"/>
+<path class="win" d="M788.8,402.8 790.5,403.8 788.8,404.8 787.0,403.8Z"/>
+<path class="win" d="M792.2,404.5 794.0,405.5 792.2,406.5 790.5,405.5Z"/>
+<path class="win" d="M788.8,419.0 790.5,420.0 788.8,421.0 787.0,420.0Z"/>
+<path class="win" d="M792.2,420.8 794.0,421.8 792.2,422.8 790.5,421.8Z"/>
+<path class="win" d="M799.2,402.8 801.0,403.8 799.2,404.8 797.5,403.8Z"/>
+<path class="win" d="M795.8,404.5 797.5,405.5 795.8,406.5 794.0,405.5Z"/>
+<path class="win" d="M799.2,419.0 801.0,420.0 799.2,421.0 797.5,420.0Z"/>
+<path class="win" d="M795.8,420.8 797.5,421.8 795.8,422.8 794.0,421.8Z"/>
+<path class="t2" d="M787.0,391.5 794.0,388.0 801.0,391.5 794.0,395.0Z"/></g>
 <g class="tw" style="animation-delay:0.674s"><path class="r1" d="M787.0,402.8 780.0,406.3 780.0,434.0 787.0,430.5Z"/><path class="l1" d="M773.0,402.8 780.0,406.3 780.0,434.0 773.0,430.5Z"/>
 <path class="win" d="M774.8,416.5 776.5,417.5 774.8,418.5 773.0,417.5Z"/>
 <path class="win" d="M778.2,418.3 780.0,419.3 778.2,420.3 776.5,419.3Z"/>
@@ -516,6 +516,7 @@
 <g class="tile" style="animation-delay:0.674s"><path d="M738.0,427.0 745.0,430.5 738.0,434.0 731.0,430.5Z"/></g>
 <g class="tile" style="animation-delay:0.674s"><path d="M724.0,427.0 731.0,430.5 724.0,434.0 717.0,430.5Z"/></g>
 <g class="tile" style="animation-delay:0.674s"><path d="M710.0,427.0 717.0,430.5 710.0,434.0 703.0,430.5Z"/></g>
+<g class="tile" style="animation-delay:0.686s"><path d="M787.0,430.5 794.0,434.0 787.0,437.5 780.0,434.0Z"/></g>
 <g class="tw" style="animation-delay:0.686s"><path class="r2" d="M780.0,383.8 773.0,387.3 773.0,437.5 780.0,434.0Z"/><path class="l2" d="M766.0,383.8 773.0,387.3 773.0,437.5 766.0,434.0Z"/>
 <path class="win" d="M767.8,394.0 769.5,395.0 767.8,396.0 766.0,395.0Z"/>
 <path class="win" d="M771.2,395.7 773.0,396.7 771.2,397.7 769.5,396.7Z"/>
@@ -579,5 +580,5 @@
 <path class="t1" d="M731.0,416.8 738.0,413.3 745.0,416.8 738.0,420.3Z"/></g>
 <g class="tw" style="animation-delay:0.734s"><path class="r0" d="M752.0,434.4 745.0,437.9 745.0,451.5 752.0,448.0Z"/><path class="l0" d="M738.0,434.4 745.0,437.9 745.0,451.5 738.0,448.0Z"/>
 <path class="t0" d="M738.0,434.4 745.0,430.9 752.0,434.4 745.0,437.9Z"/></g>
-<g class="now" style="animation-delay:0.686s"><path d="M794.0,377.85185185185185 796.6,381.85185185185185 794.0,385.85185185185185 791.4,381.85185185185185Z"/></g>
+<g class="now" style="animation-delay:0.698s"><path d="M787.0,417.5 789.6,421.5 787.0,425.5 784.4,421.5Z"/></g>
 </svg>
