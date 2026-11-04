@@ -12,7 +12,7 @@
 <br><br>
 
 <h3><code>bakkarranna@github ~ $ ./build_city.sh</code></h3>
-<img src="./contribution-city.svg" width="860" alt="Interactive isometric city where every day of the last year is a building, height scaled by that day's contributions. Hover a building for its date and count, click to pin it." />
+<img src="./contribution-city.svg" width="860" alt="Isometric city where every day of the last year is a building, its height scaled by that day's contributions, with totals, active days, busiest day, longest streak and a language-stack breakdown" />
 <br><br>
 
 <h3><code>bakkarranna@github ~ $ cat skills.txt</code></h3>
@@ -50,6 +50,6 @@ $ python / typescript / php / kotlin  toolbox
 <p align="center"><sub>a space shooter built out of one year of the contribution graph: every block is a real contribution day — its colour is that day&rsquo;s heatmap level, its health is that day&rsquo;s commit count, and the thirteen waves follow the calendar in order. No engine, no build, no trackers — just <code>space-shooter/index.html</code>, <code>game.js</code> and <code>data.js</code>.</sub></p>
 <br><br>
 
-<sub>the portrait prints once, as ASCII, above a neofetch-style card · heatmap reveals diagonally · the city grows back-to-front and every building answers to hover and click · meters fill on a stagger · every panel above is generated from <code>data/contributions.json</code> and <code>data/projects.json</code>, and the card&rsquo;s logo is the Synaptix mark traced into <code>data/synaptix-mark.json</code>, plus hand-authored copy by one GitHub Action that re-scrapes <code>github.com/users/Bakkarranna/contributions</code> daily — no third-party stat services, no tokens.</sub>
+<sub>the portrait prints once, as ASCII, above a neofetch-style card · heatmap reveals diagonally · the city grows back-to-front and every building answers to hover with its date and count · meters fill on a stagger · every panel above is generated from <code>data/contributions.json</code> and <code>data/projects.json</code>, and the card&rsquo;s logo is the Synaptix mark traced into <code>data/synaptix-mark.json</code>, plus hand-authored copy by one GitHub Action that re-scrapes <code>github.com/users/Bakkarranna/contributions</code> daily — no third-party stat services, no tokens.</sub>
 
 </div>
