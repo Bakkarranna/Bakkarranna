@@ -4,10 +4,10 @@
 <text x="28" y="42" font-size="9.5" class="dim">every day of the last 12 months, as a building</text>
 <line class="rule" x1="28" y1="52" x2="352" y2="52" stroke-width="1"/>
 <text x="28" y="72" font-size="9" class="dim">contributions</text>
-<text x="28" y="92" font-size="20" font-weight="bold" class="fg">337</text>
+<text x="28" y="92" font-size="20" font-weight="bold" class="fg">345</text>
 <text x="120" y="86" font-size="8.5" class="dim">last 12 months</text>
 <text x="28" y="116" font-size="9" class="dim">active days</text>
-<text x="28" y="136" font-size="20" font-weight="bold" class="fg">48</text>
+<text x="28" y="136" font-size="20" font-weight="bold" class="fg">49</text>
 <text x="120" y="130" font-size="8.5" class="dim">13% of the year</text>
 <text x="28" y="160" font-size="9" class="dim">busiest day</text>
 <text x="28" y="180" font-size="20" font-weight="bold" class="fg">27</text>
@@ -643,12 +643,16 @@
 <path class="win" d="M746.8,433.7 748.5,434.7 746.8,435.7 745.0,434.7Z"/>
 <path class="t1" d="M738.0,410.5 745.0,407.0 752.0,410.5 745.0,414.0Z"/></g>
 <g class="tile" style="animation-delay:0.710s"><path d="M731.0,437.5 738.0,441.0 731.0,444.5 724.0,441.0Z"/></g>
-<g class="tw" style="animation-delay:0.722s"><path class="r1" d="M773.0,416.8 766.0,420.3 766.0,448.0 773.0,444.5Z"/><path class="l1" d="M759.0,416.8 766.0,420.3 766.0,448.0 759.0,444.5Z"/>
-<path class="win" d="M760.8,430.5 762.5,431.5 760.8,432.5 759.0,431.5Z"/>
-<path class="win" d="M764.2,432.3 766.0,433.3 764.2,434.3 762.5,433.3Z"/>
-<path class="win" d="M771.2,430.5 773.0,431.5 771.2,432.5 769.5,431.5Z"/>
-<path class="win" d="M767.8,432.3 769.5,433.3 767.8,434.3 766.0,433.3Z"/>
-<path class="t1" d="M759.0,416.8 766.0,413.3 773.0,416.8 766.0,420.3Z"/></g>
+<g class="tw" style="animation-delay:0.722s"><path class="r1" d="M773.0,414.0 766.0,417.5 766.0,448.0 773.0,444.5Z"/><path class="l1" d="M759.0,414.0 766.0,417.5 766.0,448.0 759.0,444.5Z"/>
+<path class="win" d="M760.8,422.8 762.5,423.8 760.8,424.8 759.0,423.8Z"/>
+<path class="win" d="M764.2,424.5 766.0,425.5 764.2,426.5 762.5,425.5Z"/>
+<path class="win" d="M760.8,435.5 762.5,436.5 760.8,437.5 759.0,436.5Z"/>
+<path class="win" d="M764.2,437.2 766.0,438.2 764.2,439.2 762.5,438.2Z"/>
+<path class="win" d="M771.2,422.8 773.0,423.8 771.2,424.8 769.5,423.8Z"/>
+<path class="win" d="M767.8,424.5 769.5,425.5 767.8,426.5 766.0,425.5Z"/>
+<path class="win" d="M771.2,435.5 773.0,436.5 771.2,437.5 769.5,436.5Z"/>
+<path class="win" d="M767.8,437.2 769.5,438.2 767.8,439.2 766.0,438.2Z"/>
+<path class="t1" d="M759.0,414.0 766.0,410.5 773.0,414.0 766.0,417.5Z"/></g>
 <g class="tw" style="animation-delay:0.722s"><path class="r2" d="M759.0,391.5 752.0,395.0 752.0,448.0 759.0,444.5Z"/><path class="l2" d="M745.0,391.5 752.0,395.0 752.0,448.0 745.0,444.5Z"/>
 <path class="win" d="M746.8,402.3 748.5,403.3 746.8,404.3 745.0,403.3Z"/>
 <path class="win" d="M750.2,404.0 752.0,405.0 750.2,406.0 748.5,405.0Z"/>
@@ -669,7 +673,13 @@
 <path class="win" d="M743.2,430.5 745.0,431.5 743.2,432.5 741.5,431.5Z"/>
 <path class="win" d="M739.8,432.3 741.5,433.3 739.8,434.3 738.0,433.3Z"/>
 <path class="t1" d="M731.0,416.8 738.0,413.3 745.0,416.8 738.0,420.3Z"/></g>
+<g class="tw" style="animation-delay:0.734s"><path class="r1" d="M766.0,420.3 759.0,423.8 759.0,451.5 766.0,448.0Z"/><path class="l1" d="M752.0,420.3 759.0,423.8 759.0,451.5 752.0,448.0Z"/>
+<path class="win" d="M753.8,434.0 755.5,435.0 753.8,436.0 752.0,435.0Z"/>
+<path class="win" d="M757.2,435.8 759.0,436.8 757.2,437.8 755.5,436.8Z"/>
+<path class="win" d="M764.2,434.0 766.0,435.0 764.2,436.0 762.5,435.0Z"/>
+<path class="win" d="M760.8,435.8 762.5,436.8 760.8,437.8 759.0,436.8Z"/>
+<path class="t1" d="M752.0,420.3 759.0,416.8 766.0,420.3 759.0,423.8Z"/></g>
 <g class="tw" style="animation-delay:0.734s"><path class="r0" d="M752.0,428.7 745.0,432.2 745.0,451.5 752.0,448.0Z"/><path class="l0" d="M738.0,428.7 745.0,432.2 745.0,451.5 738.0,448.0Z"/>
 <path class="t0" d="M738.0,428.7 745.0,425.2 752.0,428.7 745.0,432.2Z"/></g>
-<g class="now" style="animation-delay:0.734s"><path d="M766.0,400.2962962962963 768.6,404.2962962962963 766.0,408.2962962962963 763.4,404.2962962962963Z"/></g>
+<g class="now" style="animation-delay:0.746s"><path d="M759.0,403.7962962962963 761.6,407.7962962962963 759.0,411.7962962962963 756.4,407.7962962962963Z"/></g>
 </svg>
