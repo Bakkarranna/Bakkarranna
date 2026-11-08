@@ -5,18 +5,18 @@
 <line class="rule" x1="16" y1="30" x2="844" y2="30" stroke-width="1"/>
 <g class="kpi" style="animation-delay:0.10s">
 <text x="16.0" y="52" font-size="10" class="dim">contributions</text>
-<text x="16.0" y="74" font-size="21" class="fg" font-weight="bold">358</text>
+<text x="16.0" y="74" font-size="21" class="fg" font-weight="bold">373</text>
 <text x="16.0" y="90" font-size="10" class="dim">last 12 months</text>
 </g>
 <g class="kpi" style="animation-delay:0.17s">
 <text x="154.0" y="52" font-size="10" class="dim">active days</text>
-<text x="154.0" y="74" font-size="21" class="fg" font-weight="bold">50</text>
+<text x="154.0" y="74" font-size="21" class="fg" font-weight="bold">51</text>
 <text x="154.0" y="90" font-size="10" class="dim">14% of the year</text>
 </g>
 <line class="rule" x1="146.0" y1="44" x2="146.0" y2="92" stroke-width="1"/>
 <g class="kpi" style="animation-delay:0.24s">
 <text x="292.0" y="52" font-size="10" class="dim">current streak</text>
-<text x="292.0" y="74" font-size="21" class="fg" font-weight="bold">9</text>
+<text x="292.0" y="74" font-size="21" class="fg" font-weight="bold">10</text>
 <text x="292.0" y="90" font-size="10" class="dim">days</text>
 </g>
 <line class="rule" x1="284.0" y1="44" x2="284.0" y2="92" stroke-width="1"/>
@@ -111,8 +111,8 @@
 </g>
 <g class="bar" style="animation-delay:0.73s">
 <rect x="792.2" y="211.0" width="40" height="3" rx="1" class="track"/>
-<rect x="792.2" y="158.0" width="40" height="56" rx="2" class="b3"/>
-<text x="812.2" y="153.0" font-size="10" class="dim" text-anchor="middle">102</text>
+<rect x="792.2" y="150.0" width="40" height="64" rx="2" class="b3"/>
+<text x="812.2" y="145.0" font-size="10" class="dim" text-anchor="middle">117</text>
 <text x="812.2" y="228.0" font-size="10" class="dim" text-anchor="middle">Nov</text>
 </g>
 </svg>
