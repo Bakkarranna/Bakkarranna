@@ -26,4 +26,7 @@ portrait-zoomed.png
 preview-portrait.html
 # theme-QA renders: regenerated locally by scripts/theme_qa.py (needs Chrome)
 theme-qa/
-save
+# portrait/city QA crops: local visual checks, regenerated from the committed scripts
+ascii-local.png
+portrait-live-sc.png
+crop-*.png
