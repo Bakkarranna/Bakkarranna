@@ -1,6 +1,6 @@
 {
  "username": "Bakkarranna",
- "generated_at": "2026-11-11T14:21:47+00:00",
+ "generated_at": "2026-11-11T19:37:19+00:00",
  "first_day": "2025-11-09",
  "last_day": "2026-11-11",
  "days": [
@@ -335,7 +335,7 @@
   },
   {
    "date": "2025-12-26",
-   "level": 2,
+   "level": 1,
    "count": 8,
    "weekday": 5,
    "week": 6
@@ -2415,7 +2415,7 @@
   {
    "date": "2026-10-19",
    "level": 4,
-   "count": 27,
+   "count": 30,
    "weekday": 1,
    "week": 49
   },
@@ -2442,42 +2442,42 @@
   },
   {
    "date": "2026-10-23",
-   "level": 2,
+   "level": 1,
    "count": 8,
    "weekday": 5,
    "week": 49
   },
   {
    "date": "2026-10-24",
-   "level": 2,
+   "level": 1,
    "count": 7,
    "weekday": 6,
    "week": 49
   },
   {
    "date": "2026-10-25",
-   "level": 4,
+   "level": 3,
    "count": 22,
    "weekday": 0,
    "week": 50
   },
   {
    "date": "2026-10-26",
-   "level": 3,
+   "level": 2,
    "count": 14,
    "weekday": 1,
    "week": 50
   },
   {
    "date": "2026-10-27",
-   "level": 3,
+   "level": 2,
    "count": 16,
    "weekday": 2,
    "week": 50
   },
   {
    "date": "2026-10-28",
-   "level": 2,
+   "level": 1,
    "count": 8,
    "weekday": 3,
    "week": 50
@@ -2491,7 +2491,7 @@
   },
   {
    "date": "2026-10-30",
-   "level": 3,
+   "level": 2,
    "count": 16,
    "weekday": 5,
    "week": 50
@@ -2505,21 +2505,21 @@
   },
   {
    "date": "2026-11-01",
-   "level": 4,
+   "level": 3,
    "count": 21,
    "weekday": 0,
    "week": 51
   },
   {
    "date": "2026-11-02",
-   "level": 4,
+   "level": 3,
    "count": 24,
    "weekday": 1,
    "week": 51
   },
   {
    "date": "2026-11-03",
-   "level": 4,
+   "level": 3,
    "count": 19,
    "weekday": 2,
    "week": 51
@@ -2534,62 +2534,62 @@
   {
    "date": "2026-11-05",
    "level": 2,
-   "count": 11,
+   "count": 14,
    "weekday": 4,
    "week": 51
   },
   {
    "date": "2026-11-06",
-   "level": 2,
-   "count": 12,
+   "level": 3,
+   "count": 19,
    "weekday": 5,
    "week": 51
   },
   {
    "date": "2026-11-07",
-   "level": 3,
-   "count": 17,
+   "level": 4,
+   "count": 32,
    "weekday": 6,
    "week": 51
   },
   {
    "date": "2026-11-08",
    "level": 2,
-   "count": 8,
+   "count": 15,
    "weekday": 0,
    "week": 52
   },
   {
    "date": "2026-11-09",
    "level": 3,
-   "count": 14,
+   "count": 18,
    "weekday": 1,
    "week": 52
   },
   {
    "date": "2026-11-10",
    "level": 2,
-   "count": 7,
+   "count": 14,
    "weekday": 2,
    "week": 52
   },
   {
    "date": "2026-11-11",
    "level": 1,
-   "count": 4,
+   "count": 6,
    "weekday": 3,
    "week": 52
   }
  ],
  "stats": {
-  "total_last_year": 403,
-  "counted_total": 403,
+  "total_last_year": 451,
+  "counted_total": 451,
   "active_days": 54,
   "current_streak": 13,
   "longest_streak": 13,
   "best_day": {
-   "date": "2026-10-19",
-   "count": 27
+   "date": "2026-11-07",
+   "count": 32
   },
   "monthly": [
    {
@@ -2638,11 +2638,11 @@
    },
    {
     "month": "2026-10",
-    "total": 157
+    "total": 160
    },
    {
     "month": "2026-11",
-    "total": 147
+    "total": 192
    }
   ]
  }
